@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+input:focus {
+    outline: none;
+}
+
+.container {
+    width: 1600px;
+    margin: auto;
+}
+
+.pink {
+    color: #ff009c;
+}
+
+.bg-violet {
+    background: #833bbd;
+}
+
+.bg-none {
+    background: transparent;
+    border: none;
+}
+
+.bg-orange {
+    background: #fb6f3e;
+}
+
+.bg-blue {
+    background: #4860e8;
+}
+
+.bg-violet {
+    background: #d32ee2;   
+}

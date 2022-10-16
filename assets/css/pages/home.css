@@ -1,0 +1,137 @@
+body {
+    background: url('../../images/home/bg.png');
+    width: 100%;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+
+.banner-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -140px;
+    z-index: -1;
+    margin-bottom: -140px;
+}
+
+
+
+.sports-section {
+    color: #fff;
+}
+
+
+
+.page-section-header {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.sports-section {
+    overflow: hidden;
+    background: rgb(0,0,0,0.5);
+}
+.section-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sports-section  img {
+    height: 40px;
+    width: 40px;
+    display: block;
+    margin-right: 20px;
+}
+
+.sports-section  h3 {
+    font-weight: 900;
+    font-size: 40px;
+    margin: 0;
+}
+
+.section-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+
+}
+
+
+.section-card-body {
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    padding: 20px;
+    overflow: hidden;
+
+
+}
+
+.section-card-body .inner-content {
+    position: relative;
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.section-card-body .inner-content img {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top :50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+
+}
+
+
+.section-card-body .inner-content:hover img{
+    transform: translate(-50%,-50%) scale(1.2);
+    transition: all 0.5s;
+}
+
+.section-card-body .inner-content .content {
+    position: relative;
+    z-index: 20;
+    text-align: center;
+    top: 40px;
+}
+
+
+.section-card-body .inner-content .content  h4 {
+    font-size: 33px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0px 2px 5px #000;
+    line-height: 100%;
+    margin-bottom: 10px;
+}
+
+.badge {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 5px 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    font-size: 14px;
+}
