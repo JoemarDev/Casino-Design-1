@@ -1,9 +1,3 @@
-body {
-    background: url('../../images/home/bg.png');
-    width: 100%;
-    min-height: 100vh;
-    background-attachment: fixed;
-}
 
 
 .banner-section {
@@ -18,8 +12,9 @@ body {
 
 
 
-.sports-section {
+.section-container  {
     color: #fff;
+    padding: 50px 0px!important;
 }
 
 
@@ -29,14 +24,15 @@ body {
     display: flex;
     align-content: center;
     justify-content: center;
-    margin-bottom: 30px;
-    margin-top: 30px;
+
 }
 
 .sports-section {
     overflow: hidden;
     background: rgb(0,0,0,0.5);
 }
+
+
 .section-logo-container {
     display: flex;
     align-items: center;
@@ -44,14 +40,14 @@ body {
 }
 
 
-.sports-section  img {
+.section-container  img {
     height: 40px;
     width: 40px;
     display: block;
     margin-right: 20px;
 }
 
-.sports-section  h3 {
+.section-container  h3 {
     font-weight: 900;
     font-size: 40px;
     margin: 0;
@@ -73,6 +69,7 @@ body {
     position: relative;
     padding: 20px;
     overflow: hidden;
+    cursor: pointer;
 
 
 }
@@ -135,3 +132,326 @@ body {
     border-radius: 10px;
     font-size: 14px;
 }
+
+
+.mini-game-section .section-body {
+    display: flex;
+}
+
+.mini-game-section .section-body .section-card-body {
+    padding: 20px;
+}
+
+.mini-game-section {
+    overflow: hidden;
+    background: #15111d;
+}
+
+.mini-game-card  {
+    text-align: center;
+    background: #5c5065;
+    padding: 50px 20px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.mini-game-card  h3 {
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 0px 2px 5px #000;
+}
+
+.mini-game-card img {
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+.mini-game-card p {
+    font-size: 16px;
+    color: #a9a2ae;
+    text-shadow: 0px 2px 5px #000;
+    margin-top: 12px;
+}
+
+.section-card-body:hover .mini-game-card-overlay {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.mini-game-card-overlay {
+    position: absolute;
+    background: #3c086a;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    opacity: 0.1;
+    transform: rotate(-500deg) scale(0);
+}
+
+.casino-section {
+    background: linear-gradient(to right, #833bbd, #3c086a);
+    padding: 50px 100px;
+    display: flex;
+}
+
+.casino-section .casino-left-section {
+    width: 70%;
+    padding-right: 30px;
+}
+
+.casino-section .casino-left-section .casino-section-header {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.casino-section .casino-left-section .casino-section-header img {
+    margin-right: 20px;
+}
+
+.casino-section .casino-left-section .casino-section-header h3 {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.casino-section .casino-right-section .casino-section-header {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.casino-section .casino-right-section .casino-section-header img {
+    margin-right: 20px;
+}
+
+.casino-section .casino-right-section .casino-section-header h3 {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+
+.casino-left-section-body-container {
+    display: flex;
+}
+
+.casino-left-section-body{
+    padding: 10px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.casino-inner-body {
+
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    background: #15111d;
+    width: 100%;
+    height: 260px;
+    position: relative;
+    cursor: pointer;
+}
+
+.casino-inner-body:hover .casino-card-bg-overlay{
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+
+.casino-card-bg-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+}
+
+
+.casino-card-badge {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+.casino-card-hero {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.eng-title {
+    position: absolute;
+    left: 30px;
+    top: 144px;
+    z-index: 20;
+}
+
+.kor-title {
+    position: absolute;
+    left: 30px;
+    top: 170px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    z-index: 20;
+}
+
+
+.casino-right-section-body {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.casino-right-section-body:first-child {
+    margin-top: 30px;
+}
+
+.play-icon {
+    position: absolute;
+    left: 50px;
+    top: 35px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.play-icon:hover {
+    opacity: 1;
+}
+
+.section-right-body-title {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0;
+    position: absolute;
+    right: 40px;
+    top: 38px;
+}
+
+.money-option-body-container {
+    padding: 10px;
+    display: flex;
+    padding: 20px 150px;
+    overflow: hidden;
+    background: #1b1b25;
+}
+
+.money-option-body {
+    border-radius: 10px;
+    width: 100%;
+    margin: 20px;
+    height: 250px;
+}
+
+
+.money-option-body  img {
+    left: 20px;
+    top: 50px;
+    position: absolute;
+}
+
+.money-option-body .content-information {
+    position: absolute;
+    right: 50px;
+    bottom: 40px;
+    color: #fff;
+}
+
+.money-option-body .content-information h3 {
+    font-weight: 600;
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.money-option-body .content-information  label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.money-option-body .content-information button {
+    border-radius: 5px;
+    padding : 10px 30px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.money-option-body:nth-child(1) {
+    background: linear-gradient(#111423, #49212c);
+    border: 1px solid #2b1a27;
+}
+
+.money-option-body:nth-child(2) {
+    background: linear-gradient(#141227, #261d4c);
+    border: 1px solid #222856;
+}
+
+.money-option-body:nth-child(3) {
+    background: linear-gradient(#111423, #3c194f);
+    border: 1px solid #421955;
+}
+
+
+.money-option-body:nth-child(1):hover {
+    border: 1px solid #e54243;
+}
+
+.money-option-body:nth-child(2):hover {
+
+    border: 1px solid #8b45ff;
+}
+
+.money-option-body:nth-child(3):hover {
+
+    border: 1px solid #dc28eb;
+}
+
+
+
+
+.money-option-body:nth-child(1) button{
+    background: #e54243;
+}
+
+.money-option-body:nth-child(2) button{
+    background: #8b45ff;
+}
+
+.money-option-body:nth-child(3) button{
+    background: #dc28eb;
+}
+
+
+.pre-footer {
+    padding: 50px 50px;
+    background: #15111d;
+}
+
+
+.pre-footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #ccc;
+}
+
+.pre-footer ul li {
+    width: 150px;
+    padding: 10px;
+    background: #ccc;
+}
+

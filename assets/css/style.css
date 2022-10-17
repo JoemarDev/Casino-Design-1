@@ -5,6 +5,19 @@
     margin: 0;
     font-family: 'Noto Sans KR', sans-serif;
 }
+body {
+    background: url('../images/home/bg.png');
+    width: 100%;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+.sticky {
+    position: sticky;
+    top: 10px;
+}
+
+
 
 input:focus {
     outline: none;
@@ -15,8 +28,40 @@ input:focus {
     margin: auto;
 }
 
+.white {
+    color: #fff;
+}
+
 .pink {
     color: #ff009c;
+}
+
+.gray {
+    color: #8e8e98;
+}
+
+.violet {
+    color: #833bbd;
+}
+
+.yellow {
+    color: #ffff00;    
+}
+
+.green {
+    color: #3ec600;
+}
+
+.blue {
+    color: #5d8ef9 ;
+}
+
+.bg-dark-violet {
+    background: #4f09b7;
+}
+
+.bg-pink {
+    background: #ff009c!important;
 }
 
 .bg-violet {
@@ -37,5 +82,33 @@ input:focus {
 }
 
 .bg-violet {
-    background: #d32ee2;   
+    background: #d32ee2!important;   
+}
+
+.relative {
+    position: relative;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.flex-1 {
+    flex: 1!important;
+}
+
+.flex-2 {
+    flex: 2!important;
+}
+
+.flex-3 {
+    flex: 3!important;
+}
+
+.flex-4 {
+    flex: 4!important;
+}
+
+.justify-center {
+    justify-content: center!important;
 }

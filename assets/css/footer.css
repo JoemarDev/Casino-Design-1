@@ -1,0 +1,31 @@
+footer {
+    text-align: center;
+    margin: 0;
+    padding-top: 50px;
+    background: #16112f;
+}
+
+footer  img {
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+footer   small {
+    display: block;
+    color: #6d7377;
+}
+
+.go-to-mobile {
+    width: 148px;
+    height: 47px;
+    line-height: 47px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    background: #A12BA8;
+    border-radius: 23px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
