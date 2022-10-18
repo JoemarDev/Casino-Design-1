@@ -17,6 +17,15 @@ body {
     top: 10px;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+
+
+
 
 
 input:focus {
@@ -45,7 +54,7 @@ input:focus {
 }
 
 .yellow {
-    color: #ffff00;    
+    color: #ffff00!important;    
 }
 
 .green {

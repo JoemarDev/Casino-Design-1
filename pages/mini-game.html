@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Game Page</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/navigation.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/page.css">
+    <link rel="stylesheet" href="../assets/css/pages/mini-game.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Top Navigation Section -->
+        <nav class="navigation-section">
+            <!-- Brand Area -->
+            <div id="brand-area">
+                <img  onclick="window.location.href='home.html'" src="../assets/images/navigation/logo.png" alt="logo">
+            </div>
+
+            <!-- Top Menu Options Section -->
+            <div id="top-menu-options">
+                <div class="section-content">
+                    <div class="section-title">
+                        <img src="../assets/images/icons/notice.png" alt="">
+                        <label>한줄공지</label>
+                    </div>
+                    <marquee scrollamount="7" onmouseover="this.stop()" onmouseout="this.start()">
+                        ●■▲ 온라인 오락실에 오신 것을 감사드립니다 ▲■● 주소 창에 평생 도메인 검색 : 온라인오락실.com , 오락실벳.com	
+                    </marquee>
+                </div>
+                <div class="section-content">
+                    <ul>
+                        <li class="user-name-level">
+                            <img src="../assets/images/icons/level/1.png" alt="">
+                            <span>강남아 님</span>
+                        </li>
+                        <li class="user-notes">
+                            <img src="../assets/images/icons/memo.png" alt="">
+                            <span>쪽지 0 통</span>
+                        </li>
+                        <li class="user-game-money">
+                            <span>보유머니: <span class="pink">31,000</span> 원</span>
+                        </li>
+                        <li class="user-game-money">
+                            <span>보유머니: <span class="pink">31,000</span> 원</span>
+                        </li>
+                        <li class="user-game-money">
+                            <span>보유머니: <span class="pink">31,000</span> 원</span>
+                        </li>
+                        <li class="user-game-points">
+                            <span>보유머니: <span>31,000</span> 원 </span>
+                            <img src="../assets/images/icons/change.png" alt="">
+                        </li>
+                        <li class="directory-button">
+                            <button class="bg-violet">출석부</button>
+                            <img src="../assets/images/icons/logout.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Top Navigation Section -->
+
+        
+        <!-- Menu Section -->
+        <section class="menu-section">
+            <ul>
+                <li onclick="window.location.href='sports.html'">스포츠</li>
+                <li onclick="window.location.href='mini-game.html'">미니게임</li>
+                <li onclick="window.location.href='casino.html'">카지노</li>
+                <li onclick="window.location.href='slot-lists.html'">슬롯게임</li>
+                <li>베팅내역</li>
+                <li onclick="window.location.href='qna.html'">고객센터</li>
+                <li class="header-cash">
+                    <img src="../assets/images/icons/header_cash.png" alt="">
+                    <button>빠른계좌문의</button>
+                </li>
+                <li class="header-cash-in">
+                    <img src="../assets/images/icons/header_cashin.png" alt="">
+                    <button>충전</button>
+                </li>
+                <li class="header-cash-out">
+                    <img src="../assets/images/icons/header_cashout.png" alt="">
+                    <button>환전</button>
+                </li>
+            </ul>
+        </section>
+        <!-- Menu Section -->
+
+        <!-- Sports Banner -->
+        <div class="page-banner">
+            <img src="../assets/images/minig-game/banner.jpg" alt="">
+            <h2 class="page-banner-title">미니게임</h2>
+        </div>
+        <!-- Sports Banner -->
+
+        <!-- Page Body -->
+        <section class="page-body">
+
+            <!-- Page Body Left Section -->
+            <div class="page-body-left-section">
+                <div class="page-left-menu-container">
+                    <label class="page-left-menu-title">게임 분류</label>
+                    <ul class="page-menu-tab">
+                        <li >스포츠</li>
+                        <li class="active">미니게임</li>
+                        <li>카지노</li>
+                    </ul>
+                    <!-- Sports Menu Lists -->
+                    <ul class="page-menu-lists">
+                        <li onclick="ShowChildMenu(this)">
+                            <div class="inner-flex">
+                                <span class="lists-title">엔트리 GAME</span>
+                                <span class="lists-count-badge">&#43;</span>
+                            </div>
+                            <div class="menu-child-lists">
+                                <div class="child-lists">파워볼</div>
+                                <div class="child-lists">파워사다리</div>
+                                <div class="child-lists">스피드키노</div>
+                                <div class="child-lists">키노사다리</div>
+                                <div class="child-lists">EOS파워볼1분</div>
+                                <div class="child-lists">EOS파워볼2분</div>
+                                <div class="child-lists">EOS파워볼3분</div>
+                                <div class="child-lists">EOS파워볼4분</div>
+                                <div class="child-lists">EOS파워볼5분</div>
+                            </div>
+                        </li>
+                        <li onclick="ShowChildMenu(this)">
+                            <div class="inner-flex">
+                                <span class="lists-title">네임드 게임</span>
+                                <span class="lists-count-badge">&#43;</span>
+                            </div>
+                            <div class="menu-child-lists">
+                                <div class="child-lists">N파워볼3분</div>
+                                <div class="child-lists">N파워볼5분</div>
+                                <div class="child-lists">N파워사다리3분</div>
+                                <div class="child-lists">N파워사다리5분</div>
+                            </div>
+                        </li>
+                        <li onclick="ShowChildMenu(this)">
+                            <div class="inner-flex">
+                                <span class="lists-title">로투스바카라</span>
+                                <span class="lists-count-badge">&#43;</span>
+                            </div>
+                            <div class="menu-child-lists">
+                                <div class="child-lists">로투스바카라1</div>
+                                <div class="child-lists">로투스식보</div>
+                                <div class="child-lists">로투스홀짝</div>
+                            </div>
+                        </li>
+                        <li onclick="ShowChildMenu(this)">
+                            <div class="inner-flex">
+                                <span class="lists-title">크라운게임</span>
+                                <span class="lists-count-badge">&#43;</span>
+                            </div>
+                            <div class="menu-child-lists">
+                                <div class="child-lists">크라운바카라</div>
+                                <div class="child-lists">크라운홀짝</div>
+                                <div class="child-lists">크라운섯다</div>
+                                <div class="child-lists">크라운하이로우</div>
+                                <div class="child-lists">크라운나인볼</div>
+                            </div>
+                        </li>
+                        <li onclick="ShowChildMenu(this)">
+                            <div class="inner-flex">
+                                <span class="lists-title">MGM게임</span>
+                                <span class="lists-count-badge">&#43;</span>
+                            </div>
+                            <div class="menu-child-lists">
+                                <div class="child-lists">MGM바카라</div>
+                                <div class="child-lists">MGM바카라2</div>
+                                <div class="child-lists">MGM바카라3</div>
+                                <div class="child-lists">MGM홀짝</div>
+                                <div class="child-lists">MGM고스톱</div>
+                            </div>
+                        </li>
+                        <li onclick="ShowChildMenu(this)">
+                            <div class="inner-flex">
+                                <span class="lists-title">BOSCORE</span>
+                                <span class="lists-count-badge">&#43;</span>
+                            </div>
+                            <div class="menu-child-lists">
+                                <div class="child-lists">1분 파워볼</div>
+                                <div class="child-lists">1분 별다리</div>
+                                <div class="child-lists">2분 별다리</div>
+                                <div class="child-lists">3분 별다리</div>
+                            </div>
+                        </li>
+                        <li onclick="ShowChildMenu(this)">
+                            <div class="inner-flex">
+                                <span class="lists-title">슈어맨게임</span>
+                                <span class="lists-count-badge">&#43;</span>
+                            </div>
+                            <div class="menu-child-lists">
+                                <div class="child-lists">슈어사다리1분</div>
+                                <div class="child-lists">슈어사다리2분</div>
+                                <div class="child-lists">슈어사다리3분</div>
+                                <div class="child-lists">슈어파워볼1분</div>
+                                <div class="child-lists">슈어파워볼2분</div>
+                                <div class="child-lists">슈어파워볼3분</div>
+                            </div>
+                        </li>
+                        <li onclick="ShowChildMenu(this)">
+                            <div class="inner-flex">
+                                <span class="lists-title">bepick</span>
+                                <span class="lists-count-badge">&#43;</span>
+                            </div>
+                            <div class="menu-child-lists">
+                                <div class="child-lists">보글 파워볼</div>
+                            </div>
+                        </li>
+                        <li onclick="ShowChildMenu(this)">
+                            <div class="inner-flex">
+                                <span class="lists-title">벳365가상게임</span>
+                                <span class="lists-count-badge">&#43;</span>
+                            </div>
+                            <div class="menu-child-lists">
+                                <div class="child-lists">가상축구</div>
+                                <div class="child-lists">가상농구</div>
+                                <div class="child-lists">개경주</div>
+                            </div>
+                        </li>
+                        <li onclick="ShowChildMenu(this)">
+                            <div class="inner-flex">
+                                <span class="lists-title">스코어 탐정</span>
+                                <span class="lists-count-badge">&#43;</span>
+                            </div>
+                            <div class="menu-child-lists">
+                                <div class="child-lists">슈퍼파워볼1</div>
+                                <div class="child-lists">슈퍼파워볼2</div>
+                                <div class="child-lists">슈퍼파워볼3</div>
+                                <div class="child-lists">코난사다리1</div>
+                                <div class="child-lists">코난사다리2</div>
+                                <div class="child-lists">코난사다리3</div>
+                            </div>
+                        </li>
+                        <li onclick="ShowChildMenu(this)">
+                            <div class="inner-flex">
+                                <span class="lists-title">토큰게</span>
+                                <span class="lists-count-badge">&#43;</span>
+                            </div>
+                            <div class="menu-child-lists">
+                                <div class="child-lists">토큰하이로우</div>
+                                <div class="child-lists">토큰하이로우 5초</div>
+                                <div class="child-lists">토큰바카라</div>
+                                <div class="child-lists">토큰룰렛</div>
+                                <div class="child-lists">토큰달팽이4줄</div>
+                                <div class="child-lists">토큰그래프</div>
+                                <div class="child-lists">토큰가상스포츠</div>
+                            </div>
+                        </li>
+                    </ul>
+                     <!-- Sports Menu Lists -->
+                </div>
+            </div>
+             <!-- Page Body Left Section -->
+
+            <!-- Page Body Center Section -->
+            <div class="page-body-center-section">
+
+                <div class="page-title-banner">
+                    NTRY 게임
+                </div>
+
+                <!-- Minigame Lists -->
+                <div class="mini-game-lists">
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g1.jpeg" alt="">
+                        <label>파워볼</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g2.jpeg" alt="">
+                        <label>파워사다리</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g3.jpg" alt="">
+                        <label>스피드키노</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g4.jpg" alt="">
+                        <label>키노사다리</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g5.jpg" alt="">
+                        <label>EOS파워볼1분</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g6.jpg" alt="">
+                        <label>EOS파워볼2분</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g7.jpg" alt="">
+                        <label>EOS파워볼3분</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g8.jpg" alt="">
+                        <label>EOS파워볼4분</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g9.jpg" alt="">
+                        <label>EOS파워볼5분</label>
+                    </div>
+                </div>
+                <!-- Minigame Lists -->
+
+                <div class="page-title-banner">
+                    네임드 게임
+                </div>
+
+                <!-- Minigame Lists -->
+                <div class="mini-game-lists">
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g1-1.jpeg" alt="">
+                        <label>N파워사다리3분</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g1-2.jpeg" alt="">
+                        <label>N파워사다리5분</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g1-3.jpeg" alt="">
+                        <label>N파워볼3분</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g1-4.jpeg" alt="">
+                        <label>N파워볼5분</label>
+                    </div>
+                </div>
+                <!-- Minigame Lists -->
+
+                
+                <div class="page-title-banner">
+                    BOSCORE / 베픽 게임
+                </div>
+
+                 <!-- Minigame Lists -->
+                 <div class="mini-game-lists">
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g3-1.jpg" alt="">
+                        <label>1분 파워볼</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g3-2.jpeg" alt="">
+                        <label>1분 별다리</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g3-3.jpeg" alt="">
+                        <label>2분 별다리</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g3-4.jpeg" alt="">
+                        <label>3분 별다리</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g3-5.jpeg" alt="">
+                        <label>보글 파워볼</label>
+                    </div>
+                </div>
+                <!-- Minigame Lists -->
+
+                <div class="page-title-banner">
+                    벳365가상경기 / 로투스 게임
+                </div>
+
+                
+                <!-- Minigame Lists -->
+                <div class="mini-game-lists">
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g4-1.jpg" alt="">
+                        <label>1분 파워볼</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g4-2.jpg" alt="">
+                        <label>1분 별다리</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g4-3.jpg" alt="">
+                        <label>2분 별다리</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g4-4.jpg" alt="">
+                        <label>3분 별다리</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g4-5.jpeg" alt="">
+                        <label>보글 파워볼</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g4-6.jpeg" alt="">
+                        <label>보글 파워볼</label>
+                    </div>
+                </div>
+                <!-- Minigame Lists -->
+
+                
+                <div class="page-title-banner">
+                    토큰게임
+                </div>
+
+                <!-- Minigame Lists -->
+                <div class="mini-game-lists">
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g5-1.jpeg" alt="">
+                        <label>토큰바카라</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g5-2.jpeg" alt="">
+                        <label>토큰룰렛</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g5-3.jpeg" alt="">
+                        <label>토큰하이로우</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g5-4.jpeg" alt="">
+                        <label>토큰하이로우5</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g5-5.jpeg" alt="">
+                        <label>토큰달팽이레이싱</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g5-6.jpeg" alt="">
+                        <label>토큰그래프</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g5-7.jpeg" alt="">
+                        <label>토큰가상스포츠</label>
+                    </div>
+                </div>
+                <!-- Minigame Lists -->
+
+                <div class="page-title-banner">
+                    스코어탐정 / 네임드 게임
+                </div>
+
+                 <!-- Minigame Lists -->
+                 <div class="mini-game-lists">
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g6-1.jpg" alt="">
+                        <label>코난사다리1</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g6-2.jpg" alt="">
+                        <label>코난사다리2</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g6-3.jpg" alt="">
+                        <label>코난사다리3</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g6-4.jpeg" alt="">
+                        <label>홀덤게임</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g6-5.jpeg" alt="">
+                        <label>슈퍼파워볼1</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g6-6.jpeg" alt="">
+                        <label>슈퍼파워볼2</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g6-7.jpeg" alt="">
+                        <label>슈퍼파워볼3</label>
+                    </div>
+                </div>
+                <!-- Minigame Lists -->
+
+
+                <div class="page-title-banner">
+                    크라운 
+                </div>
+
+                <!-- Minigame Lists -->
+                <div class="mini-game-lists">
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g7-1.jpg" alt="">
+                        <label>크라운바카라</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g7-2.jpg" alt="">
+                        <label>크라운홀짝</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g7-3.jpeg" alt="">
+                        <label>크라운섯다</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g7-4.jpg" alt="">
+                        <label>크라운하이로우</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g7-5.jpg" alt="">
+                        <label>크라운나인볼</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g7-6.jpg" alt="">
+                        <label>MGM바카라</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g7-6.jpg" alt="">
+                        <label>MGM바카라2테이블</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g7-6.jpg" alt="">
+                        <label>MGM바카라3테이블</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g7-7.jpg" alt="">
+                        <label>MGM홀짝</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g7-7.jpg" alt="">
+                        <label>MGM고스톱</label>
+                    </div>
+                </div>
+                <!-- Minigame Lists -->
+
+                <div class="page-title-banner">
+                    슈어맨게임
+                </div>
+
+                
+                 <!-- Minigame Lists -->
+                 <div class="mini-game-lists">
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g8-1.jpeg" alt="">
+                        <label>슈어사다리1분</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g8-1.jpeg" alt="">
+                        <label>슈어사다리2분</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g8-1.jpeg" alt="">
+                        <label>슈어사다리3분</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g8-1.jpeg" alt="">
+                        <label>슈어파워볼1분</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g8-1.jpeg" alt="">
+                        <label>슈어파워볼2분</label>
+                    </div>
+                    <div class="mini-game-child-list">
+                        <img src="../assets/images/minig-game/g8-1.jpeg" alt="">
+                        <label>슈어파워볼3분</label>
+                    </div>
+           
+                </div>
+                <!-- Minigame Lists -->
+            </div>
+            <!-- Page Body Center Section -->
+
+
+            <!-- Page Body Right Section -->
+            <div class="page-body-right-section">
+                <div class="sticky">
+                    <div class="cart-container">
+                        <div class="cart-lock-overlay">
+                            <div class="cart-lock-content">
+                                <img src="../assets/images/icons/betting_close.png" alt="">
+                                <label>카트잠김</label>
+                            </div>
+                        </div>
+                        <!-- Cart Header -->
+                        <div class="cart-header">
+                            <img class="cart-icon" src="../assets/images/svg/cart.svg" alt="">
+                            <label class="cart-header-title">베팅카트</label>
+                            <div class="cart-header-option-button">
+                                <button class="active">고정</button>
+                                <button>이동</button>
+                            </div>
+                        </div>
+                        <!-- Cart Header -->
+
+                        <div class="data-box">카트비우기</div>
+
+                        <!-- Cart Table Information -->
+                        <table class="cart-table-information">
+                            <tbody>
+
+                                
+                                <tr>
+                                    <td>보유머니</td>
+                                    <td><span class="pink">31,000</span> 원</td>
+                                </tr>
+                                <tr>
+                                    <td>보유포인트</td>
+                                    <td><span class="green">2,700</span> P</td>
+                                </tr>
+                                <tr>
+                                    <td>합산배당</td>
+                                    <td>1.00배</td>
+                                </tr>
+                                <tr>
+                                    <td>베팅금액</td>
+                                    <td><input type="text" value="0"></td>
+                                </tr>
+                                <tr>
+                                    <td>예상적중금액</td>
+                                    <td>0원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- Cart Table Information -->
+
+                        <!-- Bet Button Section -->
+                        <div class="bet-button-container">
+                            <div>
+                                <button>5,000원</button>
+                                <button>10,000원</button>
+                            </div>
+
+                            <div>
+                                <button>50,000원</button>
+                                <button>100,000원</button>
+                            </div>
+
+                            <div>
+                                <button>500,000원</button>
+                                <button>1,000,000원</button>
+                            </div>
+
+                            <div>
+                                <button class="white bg-dark-violet">금액비우기</button>
+                                <button class="white bg-dark-violet">잔돈</button>
+                                <button class="white bg-dark-violet">MAX</button>
+                            </div>
+                        </div>
+                        <!-- Bet Button Section -->
+
+                        <button class="cart-button-type-1">머니로 베팅하기</button>
+                        <button class="cart-button-type-2">포인트로 베팅하기</button>
+
+                        <!-- Bet Info Container -->
+                        <div class="bet-info-container">
+                            <div>
+                                <span>최소베팅금액</span>
+                                <span>5,000 원</span>
+                            </div>
+                            <div>
+                                <span>최대베팅금액</span>
+                                <span>5.000,000 원</span>
+                            </div>
+                            <div>
+                                <span>적중상한금액</span>
+                                <span>15,000,000 원</span>
+                            </div>
+                        </div>
+                        <!-- Bet Info Container -->
+
+
+
+                    </div>
+
+                    <div class="cart-banner">
+                        <img src="../assets/images/banner/2.png" alt="">
+                        <img src="../assets/images/banner/1.png" alt="">
+                    </div>
+                   
+                </div>
+            </div>
+            <!-- Page Body Right Section -->
+        </section>
+        
+        <!-- Footer Section -->
+        <footer>
+            <img src="../assets/images/navigation/logo.png" alt="">
+            <small>오락실 is operated by M-Hub Gaming Operations Ltd with registered office at No. 12, Tigne Place, office 2/1, Tigne Street, Sliema SLM 3713, Malta.</small>
+            <br>
+            <small>오락실 Gaming Operations Ltd is licensed and regulated by the Malta Gaming Authority (MGA),</small>
+            <small>a public regulatory body responsible for the governance of all forms of gaming based in Malta.</small>
+            <br>
+            <small>The 오락실 license was issued on October 27th, 2014, with the license number: CL2/976/2014</small>
+            <small>Find out more about the MGA at www.mga.org.mt</small>
+            <br>
+            <small>Copyright 오락실 All rights reserved.</small>
+            <button class="go-to-mobile">모바일 버전</button>
+        </footer>
+
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+<script src="../assets/js/script.js"></script>
+</html>

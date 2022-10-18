@@ -1,0 +1,92 @@
+.qna-table {
+    width: 100%;
+    color: #fff;
+    border-top: 2px solid #8a56bd;
+    border-collapse: collapse;
+}
+
+.qna-table th {
+    height: 20px;
+    font-size: 16px;
+    border-bottom: 1px solid #56575f;
+    padding: 13px 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    background: #3d3d49;
+}
+.qna-table th:first-child {
+    width: 20%;
+}
+
+.qna-table td {
+    height: 45px;
+    font-weight: 500;
+    color: #c1c1c1;
+    font-size: 14px;
+    border-bottom: 1px solid #3e3f46;
+    border-left: 0;
+    cursor: pointer;
+    background: #322b40;
+}
+
+.qna-table td:nth-child(2) {
+    color: #fff;
+    font-weight: 600;
+}
+
+
+.qna-table  tr:hover td {
+    background: #2b2536;
+    /* border-bottom: 1px solid #e73b54; */
+}
+
+
+.qna-table td  button {
+    font-size: 18px;
+    width: 49px;
+    height: 27px;
+    padding: 0;
+    line-height: 27px;
+    font-size: 13px;
+    color: #e73b54 !important;
+    background: #1f1f25;
+    border: 0;
+    border-radius: 3px;
+}
+
+.footer-button-qna {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-button-qna  button {
+    min-width: 114px;
+    height: 46px;
+    line-height: 46px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+
+    border-radius: 5px;
+    padding: 0 15px;
+    border: none;
+    font-weight: 600;
+}
+
+.qna-delete {
+    background: #56575b;
+    color: #fff !important;
+}
+
+.qna-quick {
+    background: #ff009c;
+    color: #fff !important;
+}
+
+.qna-write {
+    background: #4f09b7;
+    color: #fff !important;
+}
