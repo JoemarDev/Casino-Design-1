@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casino Page</title>
+    <title>Sports Betting Lists Page</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/navigation.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
     <link rel="stylesheet" href="../assets/css/page.css">
-    <link rel="stylesheet" href="../assets/css/pages/casino.css">
+    <link rel="stylesheet" href="../assets/css/pages/betting-history.css">
+    <link rel="stylesheet" href="../assets/css/pages/sports.css">
+    <link rel="stylesheet" href="../assets/css/pagination.css">
 </head>
 <body>
     <div class="container">
@@ -91,8 +93,8 @@
 
         <!-- Sports Banner -->
         <div class="page-banner">
-            <img src="../assets/images/casino/banner.jpg" alt="">
-            <h2 class="page-banner-title">카지노</h2>
+            <img src="../assets/images/betting-history/banner.jpg" alt="">
+            <h2 class="page-banner-title">베팅내역</h2>
         </div>
         <!-- Sports Banner -->
 
@@ -104,83 +106,31 @@
                 <div class="page-left-menu-container">
                     <label class="page-left-menu-title">게임 분류</label>
                     <ul class="page-menu-tab">
-                        <li >스포츠</li>
+                        <li>스포츠</li>
                         <li>미니게임</li>
-                        <li class="active">카지노</li>
+                        <li>카지노</li>
                     </ul>
                      <!-- Sports Menu Lists -->
                      <ul class="page-menu-lists">
                         <li>
                             <div class="inner-flex">
-                                <span class="lists-title">에볼루션</span>
+                                <img src="../assets/images/qna/1.png" alt="">
+                                <span class="lists-title">조합배팅(582)</span>
                             </div>
                         </li>
                         <li>
                             <div class="inner-flex">
-                                <span class="lists-title">에볼루션 SILM로비</span>
+                                <img src="../assets/images/qna/2.png" alt="">
+                                <span class="lists-title">스페셜(38)</span>
                             </div>
                         </li>
                         <li>
                             <div class="inner-flex">
-                                <span class="lists-title">에볼루션 DOOR로비</span>
+                                <img src="../assets/images/qna/3.png" alt="">
+                                <span class="lists-title">실시간(18)</span>
                             </div>
                         </li>
-                        <li>
-                            <div class="inner-flex">
-                                <span class="lists-title">에볼루션 DOOR로비</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="inner-flex">
-                                <span class="lists-title">WM Live</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="inner-flex">
-                                <span class="lists-title">Dream Game</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="inner-flex">
-                                <span class="lists-title">슬롯게임</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="inner-flex">
-                                <span class="lists-title">마이크론</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="inner-flex">
-                                <span class="lists-title">오리엔탈</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="inner-flex">
-                                <span class="lists-title">88카지노</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="inner-flex">
-                                <span class="lists-title">드림게임</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="inner-flex">
-                                <span class="lists-title">Asia게임</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="inner-flex">
-                                <span class="lists-title">VIVO게임</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="inner-flex">
-                                <span class="lists-title">bbin게임</span>
-                            </div>
-                        </li>
-
+                        
                     </ul>
                      <!-- Sports Menu Lists -->
                 </div>
@@ -189,71 +139,190 @@
 
             <!-- Page Body Center Section -->
             <div class="page-body-center-section">
+                <!-- Betting History Config  Section -->
+                <div class="betting-history-config">
+                    <select name="gtype">
+                        <option value="" selected="">전체</option>
+                        <option value="C">크로스</option>
+                        <option value="S">스페셜</option>
+                        <option value="L">실시간</option>
+                        <option value="mini">미니게임</option>										
+                        <option value="bom">지뢰게임</option>
+                        <option value="Vgame">가상축구</option>
+                        <option value="Vbball">가상농구</option>
+                        <option value="Vdog">개경주</option>
+                        <option value="inplay">인플레이</option>
+                    </select>
+                    <select name="btype" >
+                        <option value="" selected="">전체</option>
+                        <option value="C">머니배팅</option>
+                        <option value="P">포인트배팅</option>
+                    </select>
+                    <input type="text" value="2022-10-12">
+                    <span class="white">~</span>
+                    <input type="text" value="2022-10-19">
+                    <button>검색</button>
+                    <button>선택내역 첨부</button>
+                </div>
+                 <!-- Betting History Config  Section -->
+                
 
-                <div class="page-title-banner">
-                    라이브 카지노
+                    <!-- Page Table Show Case Section -->
+                <div class="page-table-showcase-header">
+                    
+                    <!-- Tab Showcase flex lists -->
+                    <div class="table-showcase-flex-lists header">
+                        <div class="table-child-item justify-center flex-2">
+                            <span class="gray">경기일시	</span>
+                        </div>
+                        <div class="table-child-item justify-start flex-3">
+                            리그(종목)
+                        </div>
+                        <div class="table-child-item flex-4 ">
+                            승(홈/오버)
+                        </div>
+
+                        <div class="table-child-item flex-2 justify-center flex-1">
+                            무(기준)	
+                        </div>
+
+                        <div class="table-child-item flex-4">
+                            패(원정/언더)
+                        </div>
+                        <div class="table-child-item justify-center">
+                            스코어	
+                        </div>
+                        <div class="table-child-item justify-center ">
+                            결과
+                        </div>
+                    </div>
+                    <!-- Tab Showcase flex lists -->
+                    <div class="table-showcase-header-body">
+                     
+                        <span class="white">2022/10/19</span>
+                        <span class="white">12:40 </span>
+                        <span class="white">크로스</span>
+                    </div>
+
+                    <!-- Tab Showcase flex lists -->
+                    <div class="table-showcase-flex-lists">
+                        <div class="table-child-item justify-center flex-2">
+                            <span class="gray">10-19 16:00</span>
+                        </div>
+                        <div class="table-child-item justify-start flex-3">
+                            <img class="table-lists-showcase-icon-sm" src="../assets/images/betting-history/2.jpg" alt="">
+                            <img class="table-lists-showcase-icon-sm" src="../assets/images/betting-history/1.png" alt="">
+                            <span class="gray">CBA</span>
+                        </div>
+                        <div class="table-child-item flex-4 ">
+                            <div class="left-section">톈진 라이온스</div>
+                            <div class="right-section ">2.55</div>
+                        </div>
+
+                        <div class="table-child-item flex-2 justify-center flex-1">
+                            <span>VS</span>
+                        </div>
+
+                        <div class="table-child-item flex-4 active-bg">
+                            <div class="left-section">1.16</div>
+                            <div class="right-section ">상하이 샤크스</div>
+                        </div>
+                        <div class="table-child-item justify-center">
+                            <span >:</span>
+                        </div>
+                        <div class="table-child-item justify-center ">
+                            <span class="white">진행중</span>
+                        </div>
+                    </div>
+                    <!-- Tab Showcase flex lists -->
+
+                    <!-- Tab Showcase flex lists -->
+                    <div class="table-showcase-flex-lists">
+                        <div class="table-child-item justify-center flex-2">
+                            <span class="gray">10-19 16:00</span>
+                        </div>
+                        <div class="table-child-item justify-start flex-3">
+                            <img class="table-lists-showcase-icon-sm" src="../assets/images/betting-history/3.gif" alt="">
+                            <img class="table-lists-showcase-icon-sm" src="../assets/images/betting-history/4.png" alt="">
+                            <span class="gray">KBO</span>
+                        </div>
+                        <div class="table-child-item flex-4 active-bg">
+                            <div class="left-section">KT [고영표]</div>
+                            <div class="right-section ">1.55</div>
+                        </div>
+
+                        <div class="table-child-item flex-2 justify-center flex-1">
+                            <span>VS</span>
+                        </div>
+
+                        <div class="table-child-item flex-4 ">
+                            <div class="left-section">2.15</div>
+                            <div class="right-section ">키움 [애플러]</div>
+                        </div>
+                        <div class="table-child-item justify-center">
+                            <span >:</span>
+                        </div>
+                        <div class="table-child-item justify-center ">
+                            <span class="white">진행중</span>
+                        </div>
+                    </div>
+                    <!-- Tab Showcase flex lists -->
+
+                     <!-- Tab Showcase flex lists -->
+                    <div class="table-showcase-flex-lists">
+                        <div class="table-child-item justify-center flex-2">
+                            <span class="gray">10-19 16:00</span>
+                        </div>
+                        <div class="table-child-item justify-start flex-3">
+                            <img class="table-lists-showcase-icon-sm" src="../assets/images/betting-history/3.gif" alt="">
+                            <img class="table-lists-showcase-icon-sm" src="../assets/images/betting-history/4.png" alt="">
+                            <span class="gray">KBO [1이닝 </span>
+                        </div>
+                        <div class="table-child-item flex-4 ">
+                            <div class="left-section">KT[1이닝 득점]</div>
+                            <div class="right-section ">1.94</div>
+                        </div>
+
+                        <div class="table-child-item flex-2 justify-center flex-1">
+                            <span>VS</span>
+                        </div>
+
+                        <div class="table-child-item flex-4 active-bg">
+                            <div class="left-section">1.64</div>
+                            <div class="right-section ">키움[1이닝 무득점]</div>
+                        </div>
+                        <div class="table-child-item justify-center">
+                            <span >:</span>
+                        </div>
+                        <div class="table-child-item justify-center ">
+                            <span class="white">진행중</span>
+                        </div>
+                    </div>
+                    <!-- Tab Showcase flex lists -->
+
                 </div>
 
-                <!-- Casino Lists -->
-                <div class="casino-game-lists">
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g1.jpg" alt="">
-                        <label>에볼루션</label>
-                    </div>
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g2.jpg" alt="">
-                        <label>에볼루션 SILM로비</label>
-                    </div>
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g3.jpg" alt="">
-                        <label>에볼루션 DOOR로비</label>
-                    </div>
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g4.jpeg" alt="">
-                        <label>에볼루션 BOOM로비</label>
-                    </div>
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g5.webp" alt="">
-                        <label>WM Live</label>
-                    </div>
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g6.webp" alt="">
-                        <label>Dream Game</label>
-                    </div>
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g7.jpg" alt="">
-                        <label>마이크론</label>
-                    </div>
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g8.jpg" alt="">
-                        <label>오리엔탈</label>
-                    </div>
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g9.jpg" alt="">
-                        <label>88카지노</label>
-                    </div>
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g10.jpg" alt="">
-                        <label>드림게임</label>
-                    </div>
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g11.jpg" alt="">
-                        <label>Asia게임</label>
-                    </div>
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g12.jpg" alt="">
-                        <label>VIVO게임</label>
-                    </div>
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g13.jpg" alt="">
-                        <label>bbin게임</label>
-                    </div>
+                <div class="footer-statistics">
+                    <input type="checkbox">
+                    <label>선택</label>
+                    <label>경기수 <span class="pink">3</span></label>
+                    <label>베팅금액 :10,000 </label>
+                    <label>배당률 : <span class="pink">2.94</span></label>
+                    <label>예상당첨금액 :29,400</label>
+                    <label>당첨금 :게임중</label>
+                    <label>결과 :진행중</label>
+                    <button>삭제하기</button>
                 </div>
-                <!-- Casino Lists -->
-              
 
+                   
+                <ul class="pagination">
+                    <li><img src="../assets/images/pagination/prev.png" alt=""></li>
+                    <li><img src="../assets/images/pagination/prev-single.png" alt=""></li>
+                    <li class="number active">1</li>
+                    <li><img src="../assets/images/pagination/next-single.png" alt=""></li>
+                    <li><img src="../assets/images/pagination/next.png" alt=""></li>
+                </ul>
 
-   
             </div>
             <!-- Page Body Center Section -->
 

@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casino Page</title>
+    <title>View Game Page</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/navigation.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
     <link rel="stylesheet" href="../assets/css/page.css">
-    <link rel="stylesheet" href="../assets/css/pages/casino.css">
+    <link rel="stylesheet" href="../assets/css/pages/view-game.css">
 </head>
 <body>
     <div class="container">
@@ -64,6 +64,7 @@
         </nav>
         <!-- Top Navigation Section -->
 
+        
         <!-- Menu Section -->
         <section class="menu-section">
             <ul>
@@ -91,8 +92,8 @@
 
         <!-- Sports Banner -->
         <div class="page-banner">
-            <img src="../assets/images/casino/banner.jpg" alt="">
-            <h2 class="page-banner-title">카지노</h2>
+            <img src="../assets/images/minig-game/banner.jpg" alt="">
+            <h2 class="page-banner-title">미니게임</h2>
         </div>
         <!-- Sports Banner -->
 
@@ -105,82 +106,152 @@
                     <label class="page-left-menu-title">게임 분류</label>
                     <ul class="page-menu-tab">
                         <li >스포츠</li>
-                        <li>미니게임</li>
-                        <li class="active">카지노</li>
+                        <li class="active">미니게임</li>
+                        <li>카지노</li>
                     </ul>
-                     <!-- Sports Menu Lists -->
-                     <ul class="page-menu-lists">
-                        <li>
+                    <!-- Sports Menu Lists -->
+                    <ul class="page-menu-lists">
+                        <li onclick="ShowChildMenu(this)">
                             <div class="inner-flex">
-                                <span class="lists-title">에볼루션</span>
+                                <span class="lists-title">엔트리 GAME</span>
+                                <span class="lists-count-badge">&#43;</span>
+                            </div>
+                            <div class="menu-child-lists">
+                                <div class="child-lists">파워볼</div>
+                                <div class="child-lists">파워사다리</div>
+                                <div class="child-lists">스피드키노</div>
+                                <div class="child-lists">키노사다리</div>
+                                <div class="child-lists">EOS파워볼1분</div>
+                                <div class="child-lists">EOS파워볼2분</div>
+                                <div class="child-lists">EOS파워볼3분</div>
+                                <div class="child-lists">EOS파워볼4분</div>
+                                <div class="child-lists">EOS파워볼5분</div>
                             </div>
                         </li>
-                        <li>
+                        <li onclick="ShowChildMenu(this)">
                             <div class="inner-flex">
-                                <span class="lists-title">에볼루션 SILM로비</span>
+                                <span class="lists-title">네임드 게임</span>
+                                <span class="lists-count-badge">&#43;</span>
+                            </div>
+                            <div class="menu-child-lists">
+                                <div class="child-lists">N파워볼3분</div>
+                                <div class="child-lists">N파워볼5분</div>
+                                <div class="child-lists">N파워사다리3분</div>
+                                <div class="child-lists">N파워사다리5분</div>
                             </div>
                         </li>
-                        <li>
+                        <li onclick="ShowChildMenu(this)">
                             <div class="inner-flex">
-                                <span class="lists-title">에볼루션 DOOR로비</span>
+                                <span class="lists-title">로투스바카라</span>
+                                <span class="lists-count-badge">&#43;</span>
+                            </div>
+                            <div class="menu-child-lists">
+                                <div class="child-lists">로투스바카라1</div>
+                                <div class="child-lists">로투스식보</div>
+                                <div class="child-lists">로투스홀짝</div>
                             </div>
                         </li>
-                        <li>
+                        <li onclick="ShowChildMenu(this)">
                             <div class="inner-flex">
-                                <span class="lists-title">에볼루션 DOOR로비</span>
+                                <span class="lists-title">크라운게임</span>
+                                <span class="lists-count-badge">&#43;</span>
+                            </div>
+                            <div class="menu-child-lists">
+                                <div class="child-lists">크라운바카라</div>
+                                <div class="child-lists">크라운홀짝</div>
+                                <div class="child-lists">크라운섯다</div>
+                                <div class="child-lists">크라운하이로우</div>
+                                <div class="child-lists">크라운나인볼</div>
                             </div>
                         </li>
-                        <li>
+                        <li onclick="ShowChildMenu(this)">
                             <div class="inner-flex">
-                                <span class="lists-title">WM Live</span>
+                                <span class="lists-title">MGM게임</span>
+                                <span class="lists-count-badge">&#43;</span>
+                            </div>
+                            <div class="menu-child-lists">
+                                <div class="child-lists">MGM바카라</div>
+                                <div class="child-lists">MGM바카라2</div>
+                                <div class="child-lists">MGM바카라3</div>
+                                <div class="child-lists">MGM홀짝</div>
+                                <div class="child-lists">MGM고스톱</div>
                             </div>
                         </li>
-                        <li>
+                        <li onclick="ShowChildMenu(this)">
                             <div class="inner-flex">
-                                <span class="lists-title">Dream Game</span>
+                                <span class="lists-title">BOSCORE</span>
+                                <span class="lists-count-badge">&#43;</span>
+                            </div>
+                            <div class="menu-child-lists">
+                                <div class="child-lists">1분 파워볼</div>
+                                <div class="child-lists">1분 별다리</div>
+                                <div class="child-lists">2분 별다리</div>
+                                <div class="child-lists">3분 별다리</div>
                             </div>
                         </li>
-                        <li>
+                        <li onclick="ShowChildMenu(this)">
                             <div class="inner-flex">
-                                <span class="lists-title">슬롯게임</span>
+                                <span class="lists-title">슈어맨게임</span>
+                                <span class="lists-count-badge">&#43;</span>
+                            </div>
+                            <div class="menu-child-lists">
+                                <div class="child-lists">슈어사다리1분</div>
+                                <div class="child-lists">슈어사다리2분</div>
+                                <div class="child-lists">슈어사다리3분</div>
+                                <div class="child-lists">슈어파워볼1분</div>
+                                <div class="child-lists">슈어파워볼2분</div>
+                                <div class="child-lists">슈어파워볼3분</div>
                             </div>
                         </li>
-                        <li>
+                        <li onclick="ShowChildMenu(this)">
                             <div class="inner-flex">
-                                <span class="lists-title">마이크론</span>
+                                <span class="lists-title">bepick</span>
+                                <span class="lists-count-badge">&#43;</span>
+                            </div>
+                            <div class="menu-child-lists">
+                                <div class="child-lists">보글 파워볼</div>
                             </div>
                         </li>
-                        <li>
+                        <li onclick="ShowChildMenu(this)">
                             <div class="inner-flex">
-                                <span class="lists-title">오리엔탈</span>
+                                <span class="lists-title">벳365가상게임</span>
+                                <span class="lists-count-badge">&#43;</span>
+                            </div>
+                            <div class="menu-child-lists">
+                                <div class="child-lists">가상축구</div>
+                                <div class="child-lists">가상농구</div>
+                                <div class="child-lists">개경주</div>
                             </div>
                         </li>
-                        <li>
+                        <li onclick="ShowChildMenu(this)">
                             <div class="inner-flex">
-                                <span class="lists-title">88카지노</span>
+                                <span class="lists-title">스코어 탐정</span>
+                                <span class="lists-count-badge">&#43;</span>
+                            </div>
+                            <div class="menu-child-lists">
+                                <div class="child-lists">슈퍼파워볼1</div>
+                                <div class="child-lists">슈퍼파워볼2</div>
+                                <div class="child-lists">슈퍼파워볼3</div>
+                                <div class="child-lists">코난사다리1</div>
+                                <div class="child-lists">코난사다리2</div>
+                                <div class="child-lists">코난사다리3</div>
                             </div>
                         </li>
-                        <li>
+                        <li onclick="ShowChildMenu(this)">
                             <div class="inner-flex">
-                                <span class="lists-title">드림게임</span>
+                                <span class="lists-title">토큰게</span>
+                                <span class="lists-count-badge">&#43;</span>
+                            </div>
+                            <div class="menu-child-lists">
+                                <div class="child-lists">토큰하이로우</div>
+                                <div class="child-lists">토큰하이로우 5초</div>
+                                <div class="child-lists">토큰바카라</div>
+                                <div class="child-lists">토큰룰렛</div>
+                                <div class="child-lists">토큰달팽이4줄</div>
+                                <div class="child-lists">토큰그래프</div>
+                                <div class="child-lists">토큰가상스포츠</div>
                             </div>
                         </li>
-                        <li>
-                            <div class="inner-flex">
-                                <span class="lists-title">Asia게임</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="inner-flex">
-                                <span class="lists-title">VIVO게임</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="inner-flex">
-                                <span class="lists-title">bbin게임</span>
-                            </div>
-                        </li>
-
                     </ul>
                      <!-- Sports Menu Lists -->
                 </div>
@@ -189,71 +260,94 @@
 
             <!-- Page Body Center Section -->
             <div class="page-body-center-section">
-
-                <div class="page-title-banner">
-                    라이브 카지노
+                <div class="game-view-lists-button-header">
+                    <button class="active">Beteast365</button>
+                    <button>NTRY</button>
+                    <button>네임드</button>
+                    <button>로투스</button>
+                    <button>보스코 / 베픽</button>
+                    <button>벳365</button>
+                    <button>토큰게임</button>
+                    <button>스코어</button>
+                    <button>크라운</button>
+                    <button>MGM</button>
+                    <button>슈어맨게임</button>
+                </div>
+                <div class="game-view-lists-button-header">
+                    <button class="active">야구</button>
+                    <button>농구</button>
+                    <button>크리켓</button>
+                    <button>주사위</button>
+                    <button>축구</button>
                 </div>
 
-                <!-- Casino Lists -->
-                <div class="casino-game-lists">
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g1.jpg" alt="">
-                        <label>에볼루션</label>
+                <div class="view-game-header">
+                    <div class="left">
+                        <h2>야구 <span class="pink">172</span> <span class="yellow">(31852)</span> 회차</h2>
+                        <label>5분단위로 추첨이 이루어지며 하루 288회차 진행 홀,짝/언더,오버/소,중,대 맞추는 게임</label>
                     </div>
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g2.jpg" alt="">
-                        <label>에볼루션 SILM로비</label>
+                    <div class="right"></div>
+                </div>
+
+                <div class="view-game-body">
+                    <div class="left">
+                        <div class="frame-wrapper" style="height: 498px;">
+                            <iframe class="game-frame-view" width="814" height="559" src="https://beteast365.com/soccer/index.html" frameborder="0"></iframe>
+                        </div>
+                        <div class="frame-wrapper">
+                            <iframe class="game-frame-view" width="880" height="560" src="https://beteast365.com/soccer/soccer_pattern.html" frameborder="0"></iframe>
+                        </div>
                     </div>
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g3.jpg" alt="">
-                        <label>에볼루션 DOOR로비</label>
-                    </div>
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g4.jpeg" alt="">
-                        <label>에볼루션 BOOM로비</label>
-                    </div>
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g5.webp" alt="">
-                        <label>WM Live</label>
-                    </div>
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g6.webp" alt="">
-                        <label>Dream Game</label>
-                    </div>
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g7.jpg" alt="">
-                        <label>마이크론</label>
-                    </div>
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g8.jpg" alt="">
-                        <label>오리엔탈</label>
-                    </div>
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g9.jpg" alt="">
-                        <label>88카지노</label>
-                    </div>
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g10.jpg" alt="">
-                        <label>드림게임</label>
-                    </div>
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g11.jpg" alt="">
-                        <label>Asia게임</label>
-                    </div>
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g12.jpg" alt="">
-                        <label>VIVO게임</label>
-                    </div>
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g13.jpg" alt="">
-                        <label>bbin게임</label>
+                    <div class="right">
+                        <div class="header-betting-button">
+                            <label ><span class="pink">파워볼</span> 숫자 홀/짝 | 오버/언더(<span class="blue">4.5</span>)</label>
+                        </div>
+                        <div class="betting-button-flex">
+                          
+                            <button>
+                                <span>[골]</span>
+                                <label>1.93</label>
+                            </button>
+                           
+                            <button>
+                                <span>[노골]</span>
+                                <label>1.93</label>
+                            </button>
+                           
+                        </div>
+                        <div class="header-betting-button">
+                            <label ><span class="pink">파워볼</span> 숫자 홀/짝 | 오버/언더(<span class="blue">4.5</span>)</label>
+                        </div>
+                        <div class="betting-button-flex">
+                            <button>
+                                <span>키커 [좌]</span>
+                                <label>1.93</label>
+                            </button>
+                           
+                            <button>
+                                <span>키커 [우]</span>
+                                <label>1.93</label>
+                            </button>
+                         
+                        </div>
+                        <div class="header-betting-button">
+                            <label ><span class="pink">파워볼</span> 숫자 홀/짝 | 오버/언더(<span class="blue">4.5</span>)</label>
+                        </div>
+                        <div class="betting-button-flex">
+                           
+                            <button>
+                                <span>골키퍼 [좌]</span>
+                                <label>1.93</label>
+                            </button>
+                           
+                            <button>
+                                <span>골키퍼 [우]</span>
+                                <label>1.93</label>
+                            </button>
+                         
+                        </div>
                     </div>
                 </div>
-                <!-- Casino Lists -->
-              
-
-
-   
             </div>
             <!-- Page Body Center Section -->
 
@@ -262,12 +356,7 @@
             <div class="page-body-right-section">
                 <div class="sticky">
                     <div class="cart-container">
-                        <div class="cart-lock-overlay">
-                            <div class="cart-lock-content">
-                                <img src="../assets/images/icons/betting_close.png" alt="">
-                                <label>카트잠김</label>
-                            </div>
-                        </div>
+                       
                         <!-- Cart Header -->
                         <div class="cart-header">
                             <img class="cart-icon" src="../assets/images/svg/cart.svg" alt="">

@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casino Page</title>
+    <title>Cash IN Page</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/navigation.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
     <link rel="stylesheet" href="../assets/css/page.css">
-    <link rel="stylesheet" href="../assets/css/pages/casino.css">
+    <link rel="stylesheet" href="../assets/css/pages/cash-in.css">
+    <link rel="stylesheet" href="../assets/css/pagination.css">
+    <link rel="stylesheet" href="../assets/css/transaction-table.css">
 </head>
 <body>
     <div class="container">
@@ -91,8 +93,8 @@
 
         <!-- Sports Banner -->
         <div class="page-banner">
-            <img src="../assets/images/casino/banner.jpg" alt="">
-            <h2 class="page-banner-title">카지노</h2>
+            <img src="../assets/images/cash-in/banner.jpg" alt="">
+            <h2 class="page-banner-title">마이페이지</h2>
         </div>
         <!-- Sports Banner -->
 
@@ -104,83 +106,31 @@
                 <div class="page-left-menu-container">
                     <label class="page-left-menu-title">게임 분류</label>
                     <ul class="page-menu-tab">
-                        <li >스포츠</li>
+                        <li>스포츠</li>
                         <li>미니게임</li>
-                        <li class="active">카지노</li>
+                        <li>카지노</li>
                     </ul>
                      <!-- Sports Menu Lists -->
                      <ul class="page-menu-lists">
                         <li>
                             <div class="inner-flex">
-                                <span class="lists-title">에볼루션</span>
+                                <img src="../assets/images/qna/1.png" alt="">
+                                <span class="lists-title">조합배팅(582)</span>
                             </div>
                         </li>
                         <li>
                             <div class="inner-flex">
-                                <span class="lists-title">에볼루션 SILM로비</span>
+                                <img src="../assets/images/qna/2.png" alt="">
+                                <span class="lists-title">스페셜(38)</span>
                             </div>
                         </li>
                         <li>
                             <div class="inner-flex">
-                                <span class="lists-title">에볼루션 DOOR로비</span>
+                                <img src="../assets/images/qna/3.png" alt="">
+                                <span class="lists-title">실시간(18)</span>
                             </div>
                         </li>
-                        <li>
-                            <div class="inner-flex">
-                                <span class="lists-title">에볼루션 DOOR로비</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="inner-flex">
-                                <span class="lists-title">WM Live</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="inner-flex">
-                                <span class="lists-title">Dream Game</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="inner-flex">
-                                <span class="lists-title">슬롯게임</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="inner-flex">
-                                <span class="lists-title">마이크론</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="inner-flex">
-                                <span class="lists-title">오리엔탈</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="inner-flex">
-                                <span class="lists-title">88카지노</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="inner-flex">
-                                <span class="lists-title">드림게임</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="inner-flex">
-                                <span class="lists-title">Asia게임</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="inner-flex">
-                                <span class="lists-title">VIVO게임</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="inner-flex">
-                                <span class="lists-title">bbin게임</span>
-                            </div>
-                        </li>
-
+                        
                     </ul>
                      <!-- Sports Menu Lists -->
                 </div>
@@ -189,71 +139,50 @@
 
             <!-- Page Body Center Section -->
             <div class="page-body-center-section">
+                
+                <!-- Page Tab Menu -->
+             
+                <!-- Trasaction Table -->
+                <table class="transaction-table">
+                    <tbody>
+                        <tr>
+                            <th>기존 비밀번호</th>
+                            <td>
+                                <div class="transaction-child-content">
+                                    <input class="amount-input" type="text" style="width : 300px">
+                                </div>    
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>새비밀번호</th>
+                            <td>
+                                <div class="transaction-child-content">
+                                    <input class="amount-input" type="text" style="width : 300px">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>새비밀번호확인	</th>
+                            <td>
+                                <div class="transaction-child-content">
+                                    <input class="amount-input" type="text" style="width : 300px">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>환전 비밀번호</th>
+                            <td>
+                                <div class="transaction-child-content">
+                                    <input class="amount-input" type="text" style="width : 300px">
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <div class="page-title-banner">
-                    라이브 카지노
+                <div class="submit-trasaction-button-container">
+                    <button class="submit-transaction-button">확인</button>
                 </div>
-
-                <!-- Casino Lists -->
-                <div class="casino-game-lists">
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g1.jpg" alt="">
-                        <label>에볼루션</label>
-                    </div>
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g2.jpg" alt="">
-                        <label>에볼루션 SILM로비</label>
-                    </div>
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g3.jpg" alt="">
-                        <label>에볼루션 DOOR로비</label>
-                    </div>
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g4.jpeg" alt="">
-                        <label>에볼루션 BOOM로비</label>
-                    </div>
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g5.webp" alt="">
-                        <label>WM Live</label>
-                    </div>
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g6.webp" alt="">
-                        <label>Dream Game</label>
-                    </div>
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g7.jpg" alt="">
-                        <label>마이크론</label>
-                    </div>
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g8.jpg" alt="">
-                        <label>오리엔탈</label>
-                    </div>
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g9.jpg" alt="">
-                        <label>88카지노</label>
-                    </div>
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g10.jpg" alt="">
-                        <label>드림게임</label>
-                    </div>
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g11.jpg" alt="">
-                        <label>Asia게임</label>
-                    </div>
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g12.jpg" alt="">
-                        <label>VIVO게임</label>
-                    </div>
-                    <div class="casino-game-child-list">
-                        <img src="../assets/images/casino/g13.jpg" alt="">
-                        <label>bbin게임</label>
-                    </div>
-                </div>
-                <!-- Casino Lists -->
-              
-
-
-   
             </div>
             <!-- Page Body Center Section -->
 

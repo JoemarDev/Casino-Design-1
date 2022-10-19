@@ -1,5 +1,5 @@
 .navigation-section { 
-    height: 82px;
+    height: 90px;
     background: rgba(20, 16, 30, 0.9);
     overflow: hidden;
     border-bottom: 1px solid rgba(165, 168, 178, 0.2);
@@ -80,6 +80,8 @@
     font-weight: 600;
     display: flex;
     align-content: center;
+    border: none;
+    cursor: pointer;
 }
 
 

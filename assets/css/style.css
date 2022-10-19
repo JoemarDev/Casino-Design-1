@@ -25,7 +25,9 @@ ul {
 
 
 
-
+.c-pointer {
+    cursor: pointer;
+}
 
 
 input:focus {
@@ -45,6 +47,9 @@ input:focus {
     color: #ff009c;
 }
 
+.red {
+    color: #e73b54!important;
+}
 .gray {
     color: #8e8e98;
 }
@@ -69,6 +74,10 @@ input:focus {
     background: #4f09b7;
 }
 
+
+.bg-gray {
+    background: #354e5d;
+}
 .bg-pink {
     background: #ff009c!important;
 }
@@ -120,4 +129,8 @@ input:focus {
 
 .justify-center {
     justify-content: center!important;
+}
+
+.justify-start {
+    justify-content: start!important
 }
