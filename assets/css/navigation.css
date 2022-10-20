@@ -56,7 +56,9 @@
     align-items: center;
     justify-content: center;
 }
-
+.user-notes {
+    cursor: pointer;
+}
 .section-content ul li {
     display: flex;
     align-items: center;

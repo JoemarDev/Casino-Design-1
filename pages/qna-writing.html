@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cash IN Page</title>
+    <title>QNA Page</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/navigation.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
     <link rel="stylesheet" href="../assets/css/page.css">
-    <link rel="stylesheet" href="../assets/css/pages/cash-in.css">
+    <link rel="stylesheet" href="../assets/css/pages/qna.css">
     <link rel="stylesheet" href="../assets/css/pagination.css">
     <link rel="stylesheet" href="../assets/css/transaction-table.css">
 </head>
@@ -93,8 +93,8 @@
 
         <!-- Sports Banner -->
         <div class="page-banner">
-            <img src="../assets/images/cash-in/banner.jpg" alt="">
-            <h2 class="page-banner-title">충전신청</h2>
+            <img src="../assets/images/qna/banner.jpg" alt="">
+            <h2 class="page-banner-title">고객센터</h2>
         </div>
         <!-- Sports Banner -->
 
@@ -139,148 +139,45 @@
 
             <!-- Page Body Center Section -->
             <div class="page-body-center-section">
+
                 
-                <!-- Page Tab Menu -->
-                <div class="page-tab-menu">
-                    <div class="page-tab-menu-child active" onclick="window.location.href='cash-in.html'">충전신청</div>
-                    <div class="page-tab-menu-child" onclick="window.location.href='cash-out.html'">환전신청</div>
-                    <div class="page-tab-menu-child" onclick="window.location.href='point-history.html'">포인트내역 및 설명</div>
-                </div>
-                <!-- Page Tab Menu -->
-
-                <!-- Page Section memo -->
-                <div class="page-section-memo">
-                    <div class="page-section-memo-header">
-                        <img src="../assets/images/icons/icon-suo-r.png" alt="">
-                        <h3>필독/주의사항</h3>
-                    </div>
-
-                    <div class="page-section-memo-content">
-                        <ul>
-                            <li>① 입금하실 계좌에 PC 뱅킹, 폰뱅킹, 무통장 입금, ATM등의 입금 방법중 하나를 선택하여 </li>
-                            <li>② 입금하신 금액과 동일한 금액을 체크하세요.</li>
-                            <li>③ 입금자명에는 입금하신 분의 성함을 넣어 주세요.</li>
-                            <li>④ 신청 버튼을 클릭하시면 충전이 완료됩니다.</li>
-                            <li>⑤ 수표 입금시 충전처리가 되지않으며, 혹시 입금을 하셨을 경우 바로 환전이 불가합니다.</li>
-                            <li>운영진측에서 정상적인 수표 확인이된 후에 환전을 해드리도록 하겠습니다.</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Page Section memo -->
-
-                <!-- Cash In Block -->
-                <div class="cash-in-block">
-                    <span class="yellow">입금하시기 전에 반드시 계좌문의를 해주세요</span>
-                    <button>
-                        <span>빠른계좌문의</span>
-                        <img src="../assets/images/icons/cash_icon.gif" alt="">
-                    </button>
-                </div>
-                <!-- Cash In Block -->
-
-
                 <!-- Trasaction Table -->
-                <table class="transaction-table">
+                <table class="transaction-table" style="margin-top: 0">
                     <tbody>
                         <tr>
-                            <th>충전보너스</th>
+                            <th>제목</th>
                             <td>
-                                <div class="transaction-child-content">
-                                    <div class="transaction-content-flex">
-                                        <div class="transaction-choice-with-radio">
-                                            <input name="trans-type" type="radio" checked>
-                                            <span>신규30%추가 이벤트</span>
-                                        </div>
-                                        <div class="transaction-choice-with-radio">
-                                            <input name="trans-type" type="radio">
-                                            <span> 입금플러스 이벤트</span>
-                                        </div>
-                                        <div class="transaction-choice-with-radio">
-                                            <input name="trans-type" type="radio">
-                                            <span>충전보너스 미지급</span>
-                                        </div>
-                                    </div>
-                                    <p>① 신규가입 충전 시 10%포인트 지급이 되시며 스포츠 3폴더 이상 배팅 후 고객센터로 문의 주시면 추가 20%포인트로 지급됩니다(합10%+20%)</p>
-                                </div>
+                                <input class="qna-writing" type="text" style="width : 300px" placeholder="제목을 입력해주세요.">
                             </td>
                         </tr>
                         <tr>
-                            <th>보유머니</th>
+                            <th>내용</th>
                             <td>
-                                <div class="transaction-child-content">
-                                    <div class="transaction-content-flex">
-                                        <img src="../assets/images/svg/wallet.svg" alt="">
-                                        <label><span class="yellow">31,000</span> 원</label>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>입금자명</th>
-                            <td>
-                                <div class="transaction-child-content">
-                                    <input class="account-number" type="text" value="**" disabled>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>입금신청금액</th>
-                            <td>
-                                <div class="transaction-child-content">
-                                    <span class="red warning-text-notice">*확인 한 계좌번호로 선입금 후 입금하신 금액을 정확히 입력하고 신청하기 버튼을 눌러주세요</span>
+                                <textarea class="qna-writing" type="text" placeholder="욕설, 상대방 비방글, 타사이트 언급, 홍보 등은 경고없이 삭제되며 사이트 이용에 제한을 받을 수 있습니다. " ></textarea>
 
-                                    <div class="transaction-content-flex">
-                                        <input class="amount-input" type="text">
-                                        <button class="transaction-money-button">1만원</button>
-                                        <button class="transaction-money-button">3만원</button>
-                                        <button class="transaction-money-button">5만원</button>
-                                        <button class="transaction-money-button">10만원</button>
-                                        <button class="transaction-money-button">50만원</button>
-                                        <button class="transaction-money-button">100만원</button>
-                                        <button class="transaction-money-button gray">정정</button>
-                                    </div>
-                                </div>
                             </td>
                         </tr>
+                      
                     </tbody>
                 </table>
 
-                <div class="submit-trasaction-button-container">
-                    <button class="submit-transaction-button">충전신청</button>
-                </div>
-               
-                <div class="transaction-history-table-container">
-                    <h3>◎충전신청내역</h3>
 
-                    <table class="transaction-history-table">
-                        <thead>
-                            <tr>
-                                <th>신청시간</th>
-                                <th>신청금액</th>
-                                <th>상태</th>
-                                <th>처리시간</th>
-                                <th>삭제</th>
-                            </tr>
-
-                        </thead>
-                    </table>
-                </div>
 
 
 
                 
-                <ul class="pagination">
-                    <li><img src="../assets/images/pagination/prev.png" alt=""></li>
-                    <li><img src="../assets/images/pagination/prev-single.png" alt=""></li>
                 
-                    <li><img src="../assets/images/pagination/next-single.png" alt=""></li>
-                    <li><img src="../assets/images/pagination/next.png" alt=""></li>
-                </ul>
 
 
-
-
-
+                <div class="footer-button-qna" style="justify-content: center; margin-top: 20px;">
+                    <div class="left">
+                     
+                    </div>
+                    <div class="right">
+                        <button class="qna-quick">확인</button>
+                        <button class="qna-write c-pointer" onclick="window.location='qna.html'">취소</button>
+                    </div>
+                </div>
             </div>
             <!-- Page Body Center Section -->
 

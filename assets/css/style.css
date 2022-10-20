@@ -111,6 +111,9 @@ input:focus {
     text-align: center;
 }
 
+.text-left {
+    text-align: left;
+}
 .flex-1 {
     flex: 1!important;
 }
