@@ -3,14 +3,14 @@
     align-items: center;
     padding: 10px;
     margin-bottom: 10px;
-    background-color: #3a3b42;
+    background-color: #221c14;
     border-radius: 5px;
 }
 
 .betting-history-config select {
     padding: 10px 59px 10px 10px;
     border: 1px solid #4e475c;
-    background: #1b1b25 url(http://orak-123.com/images/sub/select_down.png?v=2) no-repeat 90% 50%;
+    background: #000 url(http://orak-123.com/images/sub/select_down.png?v=2) no-repeat 90% 50%;
     cursor: pointer;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -24,7 +24,7 @@
 
 .betting-history-config input {
     padding: 10px 10px 9px 10px;
-    background-color: #1b1b25;
+    background-color: #000;
     border: 1px solid #4e475c;
     color: #fff;
 
@@ -40,7 +40,7 @@
 .betting-history-config button {
     width: 90px;
     height: 40px;
-    background: linear-gradient(#fe009c, #da07a9);
+    background: linear-gradient(#cf9113, #ffbd3f);
     font-size: 16px;
     font-weight: 700;
     color: #fff;

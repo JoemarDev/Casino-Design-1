@@ -21,7 +21,7 @@
 }
 
 .game-view-lists-button-header button.active {
-    background: linear-gradient(#4f09b7, #fd009c);
+    background: linear-gradient(#f5b436, #221c14);
     color: #fff;
 }
 
@@ -39,13 +39,13 @@
 
 
 .game-view-lists-button-header button:hover {
-    background: linear-gradient(#4f09b7, #fd009c);
+    background: linear-gradient(#f5b436, #221c14);
     color: #fff;
 }
 
 
 .view-game-header {
-    background: #4f09b7;
+    background: #3a3b42;
     height: 90px;
     margin-top: 0;
     padding: 0 20px;
@@ -55,7 +55,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
 }
 
 .view-game-header label {
@@ -71,17 +71,17 @@
     margin-top: 5px;
 }
 
-.view-game-body  .left {
+.view-game-body .left {
     width: 70%;
 
 }
 
-.view-game-body  .right {
+.view-game-body .right {
     width: 30%;
     height: 350px;
     position: sticky;
     top: 5px;
-    border: 2px solid #fd009c;
+    border: 2px solid #996806;
     background: #191923;
     padding: 10px;
     border-radius: 5px;
@@ -93,7 +93,7 @@
     overflow: hidden;
 }
 
-.frame-wrapper:last-child .game-frame-view  {
+.frame-wrapper:last-child .game-frame-view {
     transform: scale(0.870);
     transform-origin: -25% 0%;
 }
@@ -134,6 +134,7 @@
     box-shadow: 3px 3px 0px #931863;
     border-radius: 17px;
 }
+
 .betting-button-flex div {
     padding: 5px;
     color: #fff;

@@ -5,8 +5,9 @@
     margin: 0;
     font-family: 'Noto Sans KR', sans-serif;
 }
+
 body {
-    background: url('../images/home/bg.png');
+    background: url('../images/home/bg.jpg');
     width: 100%;
     min-height: 100vh;
     background-attachment: fixed;
@@ -48,8 +49,9 @@ input:focus {
 }
 
 .red {
-    color: #e73b54!important;
+    color: #e73b54 !important;
 }
+
 .gray {
     color: #8e8e98;
 }
@@ -59,7 +61,7 @@ input:focus {
 }
 
 .yellow {
-    color: #ffff00!important;    
+    color: #ffd989 !important;
 }
 
 .green {
@@ -67,19 +69,20 @@ input:focus {
 }
 
 .blue {
-    color: #5d8ef9 ;
+    color: #5d8ef9;
 }
 
 .bg-dark-violet {
-    background: #4f09b7;
+    background: #996806;
 }
 
 
 .bg-gray {
-    background: #354e5d;
+    background: #3a3b42;
 }
+
 .bg-pink {
-    background: #ff009c!important;
+    background: #996806 !important;
 }
 
 .bg-violet {
@@ -100,7 +103,7 @@ input:focus {
 }
 
 .bg-violet {
-    background: #d32ee2!important;   
+    background: #d32ee2 !important;
 }
 
 .relative {
@@ -114,26 +117,27 @@ input:focus {
 .text-left {
     text-align: left;
 }
+
 .flex-1 {
-    flex: 1!important;
+    flex: 1 !important;
 }
 
 .flex-2 {
-    flex: 2!important;
+    flex: 2 !important;
 }
 
 .flex-3 {
-    flex: 3!important;
+    flex: 3 !important;
 }
 
 .flex-4 {
-    flex: 4!important;
+    flex: 4 !important;
 }
 
 .justify-center {
-    justify-content: center!important;
+    justify-content: center !important;
 }
 
 .justify-start {
-    justify-content: start!important
+    justify-content: start !important
 }

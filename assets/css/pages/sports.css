@@ -1,4 +1,3 @@
-
 /* Center Style */
 
 .page-body-center-section .page-tabs-nav li {
@@ -7,13 +6,13 @@
     margin-top: 5px;
     margin-bottom: 10px;
     text-align: center;
-    background: #3a3b42;
+    background: #221c14;
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-left: 1px solid #56575f;
-    color: #b5b7bb;
+    color: #fff;
     cursor: pointer;
 }
 
@@ -27,7 +26,8 @@
     margin-top: 20px;
 }
 
-.table-showcase-header-body span,label {
+.table-showcase-header-body span,
+label {
     margin-right: 5px;
     font-weight: 600;
 }
@@ -48,13 +48,13 @@
 
 .table-showcase-flex-lists.header .table-child-item {
     margin: 0;
-    border-bottom: 2px solid #8a56bd;
-    justify-content: center!important;
+    border-bottom: 2px solid #855b08;
+    justify-content: center !important;
 }
 
 
 .table-showcase-flex-lists .table-child-item {
-    background: linear-gradient(#2e2e3a, #363645);
+    background: linear-gradient(#261e12, #17110b);
     width: 100%;
     flex: 1;
     display: flex;
@@ -75,7 +75,7 @@
 }
 
 .table-showcase-flex-lists .table-child-item.active-bg {
-    background: #8f135f ;
+    background: #996806;
 }
 
 .table-showcase-flex-lists .table-child-item div {
@@ -89,7 +89,7 @@
 }
 
 .line-divider {
-    border-top: 2px solid #8a56bd;
+    border-top: 2px solid #855b08;
     margin: 10px 0px;
 }
 
@@ -113,11 +113,13 @@
 .footer-statistics input {
     margin-right: 10px;
 }
-.footer-statistics label{
+
+.footer-statistics label {
     font-size: 12px;
     font-weight: 300;
     margin-right: 20px;
 }
+
 .footer-statistics button {
     background: #3a3b42;
     width: 67px;

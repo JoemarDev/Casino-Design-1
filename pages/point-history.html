@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,14 +13,17 @@
     <link rel="stylesheet" href="../assets/css/pages/cash-in.css">
     <link rel="stylesheet" href="../assets/css/pagination.css">
     <link rel="stylesheet" href="../assets/css/transaction-table.css">
+
+    <link rel="stylesheet" href="../assets/css/iconfont.css">
 </head>
+
 <body>
     <div class="container">
         <!-- Top Navigation Section -->
         <nav class="navigation-section">
             <!-- Brand Area -->
             <div id="brand-area">
-                <img  onclick="window.location.href='home.html'" src="../assets/images/navigation/logo.png" alt="logo">
+                <img onclick="window.location.href='home.html'" src="../assets/images/navigation/logo.png" alt="logo">
             </div>
 
             <!-- Top Menu Options Section -->
@@ -30,30 +34,30 @@
                         <label>한줄공지</label>
                     </div>
                     <marquee scrollamount="7" onmouseover="this.stop()" onmouseout="this.start()">
-                        ●■▲ 온라인 오락실에 오신 것을 감사드립니다 ▲■● 주소 창에 평생 도메인 검색 : 온라인오락실.com , 오락실벳.com	
+                        라이브카지노가 오픈되었습니다. 생생한 카지노 게임을 즐겨보세요. 감사합니다 ^.^
                     </marquee>
                 </div>
                 <div class="section-content">
                     <ul>
                         <li class="user-name-level">
                             <img src="../assets/images/icons/level/1.png" alt="">
-                            <span>강남아 님</span>
+                            <span>홍길동 님</span>
                         </li>
                         <li class="user-notes" onclick="window.location='memo.html'">
-                            <img src="../assets/images/icons/memo.png" alt="">
-                            <span>쪽지 0 통</span>
+                            <span class="icon iconfont vam4"></span>
+                            <span>쪽지 <span class="yellow">0</span> 통</span>
                         </li>
                         <li class="user-game-money">
-                            <span>보유머니: <span class="pink">31,000</span> 원</span>
+                            <span class="icon iconfont fz20 vam3"></span>
+                            <span>보유머니: <span class="yellow">31,000</span> 원</span>
                         </li>
                         <li class="user-game-money">
-                            <span>보유머니: <span class="pink">31,000</span> 원</span>
-                        </li>
-                        <li class="user-game-money">
-                            <span>보유머니: <span class="pink">31,000</span> 원</span>
+                            <span class="icon iconfont fz20 vam3"></span>
+                            <span>카지노머니: <span class="yellow">31,000</span> 원</span>
                         </li>
                         <li class="user-game-points">
-                            <span>보유머니: <span>31,000</span> 원 </span>
+                            <span class="icon iconfont fz19 vam3"></span>
+                            <span>포인트: <span class="yellow">31,000</span> P </span>
                             <img src="../assets/images/icons/change.png" alt="">
                         </li>
                         <li class="directory-button">
@@ -69,23 +73,27 @@
         <!-- Menu Section -->
         <section class="menu-section">
             <ul>
-                <li onclick="window.location.href='sports.html'">스포츠</li>
-                <li onclick="window.location.href='mini-game.html'">미니게임</li>
                 <li onclick="window.location.href='casino.html'">카지노</li>
                 <li onclick="window.location.href='slot-lists.html'">슬롯게임</li>
+                <li onclick="window.location.href='mini-game.html'">미니게임</li>
+                <li onclick="window.location.href='sports.html'">스포츠</li>
                 <li onclick="window.location.href='sports-betting-lists.html'">베팅내역</li>
                 <li onclick="window.location.href='qna.html'">고객센터</li>
                 <li class="header-cash">
-                    <img src="../assets/images/icons/header_cash.png" alt="">
-                    <button>빠른계좌문의</button>
+                    <div class="inner-wrapper">
+                        <button>빠른계좌문의</button>
+                    </div>
                 </li>
                 <li class="header-cash-in" onclick="window.location.href='cash-in.html'">
-                    <img src="../assets/images/icons/header_cashin.png" alt="">
-                    <button>충전</button>
+                    <div class="inner-wrapper">
+                        <button>충전</button>
+                    </div>
                 </li>
-                <li class="header-cash-out"  onclick="window.location.href='cash-out.html'">
-                    <img src="../assets/images/icons/header_cashout.png" alt="">
-                    <button>환전</button>
+                <li class="header-cash-out" onclick="window.location.href='cash-out.html'">
+                    <div class="inner-wrapper">
+                        <button>환전</button>
+                    </div>
+
                 </li>
             </ul>
         </section>
@@ -94,7 +102,7 @@
         <!-- Sports Banner -->
         <div class="page-banner">
             <img src="../assets/images/cash-in/banner.jpg" alt="">
-            <h2 class="page-banner-title">충전신청</h2>
+            <h2 class="page-banner-title">포인트전환 내역</h2>
         </div>
         <!-- Sports Banner -->
 
@@ -106,12 +114,13 @@
                 <div class="page-left-menu-container">
                     <label class="page-left-menu-title">게임 분류</label>
                     <ul class="page-menu-tab">
-                        <li>스포츠</li>
-                        <li>미니게임</li>
                         <li>카지노</li>
+                        <li>슬롯</li>
+                        <li>미니게임</li>
+                        <li>스포츠</li>
                     </ul>
-                     <!-- Sports Menu Lists -->
-                     <ul class="page-menu-lists">
+                    <!-- Sports Menu Lists -->
+                    <ul class="page-menu-lists">
                         <li>
                             <div class="inner-flex">
                                 <img src="../assets/images/qna/1.png" alt="">
@@ -130,21 +139,22 @@
                                 <span class="lists-title">실시간(18)</span>
                             </div>
                         </li>
-                        
+
                     </ul>
-                     <!-- Sports Menu Lists -->
+                    <!-- Sports Menu Lists -->
                 </div>
             </div>
-             <!-- Page Body Left Section -->
+            <!-- Page Body Left Section -->
 
             <!-- Page Body Center Section -->
             <div class="page-body-center-section">
-                
+
                 <!-- Page Tab Menu -->
                 <div class="page-tab-menu">
                     <div class="page-tab-menu-child" onclick="window.location.href='cash-in.html'">충전신청</div>
                     <div class="page-tab-menu-child" onclick="window.location.href='cash-out.html'">환전신청</div>
-                    <div class="page-tab-menu-child active" onclick="window.location.href='point-history.html'">포인트내역 및 설명</div>
+                    <div class="page-tab-menu-child active" onclick="window.location.href='point-history.html'">포인트전환 내역
+                    </div>
                 </div>
                 <!-- Page Tab Menu -->
 
@@ -152,22 +162,21 @@
                 <div class="page-section-memo">
                     <div class="page-section-memo-header">
                         <img src="../assets/images/icons/icon-suo-r.png" alt="">
-                        <h3>포인트 사용 설명</h3>
+                        <h3>포인트전환 내역</h3>
                     </div>
 
                     <div class="page-section-memo-content">
                         <ul>
-                            <li>① 보너스로 지급 받으신 포인트는 머니로 전환이 불가능하시며 스포츠 3폴더 이상 배팅만 가능하고 1,000 포인트 부터 사용가능합니다.</li>
-                            <li>② 포인트자체적으로 포인트배팅하기가 배팅카트에 배치되어있습니다.</li>
-                            <li>③ 포인트로 배팅후 당첨된 경기는 당첨머니만큼 보유머니로 지급됩니다.</li>
+                            <li>① 5,000 포인트 부터 전환 가능합니다.</li>
+                            <li>② 보유머니로 전환 하시고 배팅 가능합니다.</li>
                         </ul>
                     </div>
                 </div>
                 <!-- Page Section memo -->
 
-               
+
                 <div class="transaction-history-table-container">
-                    <h3>◎포인트내역</h3>
+                    <h3>◎포인트전환 내역</h3>
 
                     <table class="transaction-history-table text-center">
                         <thead>
@@ -179,54 +188,54 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>2022-10-11 05:15:48	</td>
-                                <td><span class="yellow">[글쓰기] 포인트 지급100</span></td>
-                                <td><strong class="white">100 P</strong></td>
+                                <td>2022-10-11 05:15:48 </td>
+                                <td><span class="yellow">[포인트] 보유머니로 전환</span></td>
+                                <td><strong class="white">5,000 원</strong></td>
                             </tr>
                             <tr>
-                                <td>2022-10-11 05:15:48	</td>
-                                <td><span class="yellow">[글쓰기] 포인트 지급100</span></td>
-                                <td><strong class="white">100 P</strong></td>
+                                <td>2022-10-11 05:15:48 </td>
+                                <td><span class="yellow">[포인트] 보유머니로 전환</span></td>
+                                <td><strong class="white">5,000 원</strong></td>
                             </tr>
                             <tr>
-                                <td>2022-10-11 05:15:48	</td>
-                                <td><span class="yellow">[글쓰기] 포인트 지급100</span></td>
-                                <td><strong class="white">100 P</strong></td>
+                                <td>2022-10-11 05:15:48 </td>
+                                <td><span class="yellow">[포인트] 보유머니로 전환</span></td>
+                                <td><strong class="white">5,000 원</strong></td>
                             </tr>
                             <tr>
-                                <td>2022-10-11 05:15:48	</td>
-                                <td><span class="yellow">[글쓰기] 포인트 지급100</span></td>
-                                <td><strong class="white">100 P</strong></td>
+                                <td>2022-10-11 05:15:48 </td>
+                                <td><span class="yellow">[포인트] 보유머니로 전환</span></td>
+                                <td><strong class="white">5,000 원</strong></td>
                             </tr>
                             <tr>
-                                <td>2022-10-11 05:15:48	</td>
-                                <td><span class="yellow">[글쓰기] 포인트 지급100</span></td>
-                                <td><strong class="white">100 P</strong></td>
+                                <td>2022-10-11 05:15:48 </td>
+                                <td><span class="yellow">[포인트] 보유머니로 전환</span></td>
+                                <td><strong class="white">5,000 원</strong></td>
                             </tr>
                             <tr>
-                                <td>2022-10-11 05:15:48	</td>
-                                <td><span class="yellow">[글쓰기] 포인트 지급100</span></td>
-                                <td><strong class="white">100 P</strong></td>
+                                <td>2022-10-11 05:15:48 </td>
+                                <td><span class="yellow">[포인트] 보유머니로 전환</span></td>
+                                <td><strong class="white">5,000 원</strong></td>
                             </tr>
                             <tr>
-                                <td>2022-10-11 05:15:48	</td>
-                                <td><span class="yellow">[글쓰기] 포인트 지급100</span></td>
-                                <td><strong class="white">100 P</strong></td>
+                                <td>2022-10-11 05:15:48 </td>
+                                <td><span class="yellow">[포인트] 보유머니로 전환</span></td>
+                                <td><strong class="white">5,000 원</strong></td>
                             </tr>
                             <tr>
-                                <td>2022-10-11 05:15:48	</td>
-                                <td><span class="yellow">[글쓰기] 포인트 지급100</span></td>
-                                <td><strong class="white">100 P</strong></td>
+                                <td>2022-10-11 05:15:48 </td>
+                                <td><span class="yellow">[포인트] 보유머니로 전환</span></td>
+                                <td><strong class="white">5,000 원</strong></td>
                             </tr>
                             <tr>
-                                <td>2022-10-11 05:15:48	</td>
-                                <td><span class="yellow">[글쓰기] 포인트 지급100</span></td>
-                                <td><strong class="white">100 P</strong></td>
+                                <td>2022-10-11 05:15:48 </td>
+                                <td><span class="yellow">[포인트] 보유머니로 전환</span></td>
+                                <td><strong class="white">5,000 원</strong></td>
                             </tr>
                             <tr>
-                                <td>2022-10-11 05:15:48	</td>
-                                <td><span class="yellow">[글쓰기] 포인트 지급100</span></td>
-                                <td><strong class="white">100 P</strong></td>
+                                <td>2022-10-11 05:15:48 </td>
+                                <td><span class="yellow">[포인트] 보유머니로 전환</span></td>
+                                <td><strong class="white">5,000 원</strong></td>
                             </tr>
                         </tbody>
                     </table>
@@ -234,7 +243,7 @@
 
 
 
-                
+
                 <ul class="pagination">
                     <li><img src="../assets/images/pagination/prev.png" alt=""></li>
                     <li><img src="../assets/images/pagination/prev-single.png" alt=""></li>
@@ -264,6 +273,7 @@
                                 <label>카트잠김</label>
                             </div>
                         </div>
+
                         <!-- Cart Header -->
                         <div class="cart-header">
                             <img class="cart-icon" src="../assets/images/svg/cart.svg" alt="">
@@ -275,23 +285,20 @@
                         </div>
                         <!-- Cart Header -->
 
-                        <div class="data-box">카트비우기</div>
+                        <div class="data-box c-pointer">카트비우기</div>
 
                         <!-- Cart Table Information -->
                         <table class="cart-table-information">
                             <tbody>
 
-                                
+
                                 <tr>
                                     <td>보유머니</td>
-                                    <td><span class="pink">31,000</span> 원</td>
+                                    <td><span class="yellow">31,000</span> 원</td>
                                 </tr>
+
                                 <tr>
-                                    <td>보유포인트</td>
-                                    <td><span class="green">2,700</span> P</td>
-                                </tr>
-                                <tr>
-                                    <td>합산배당</td>
+                                    <td>총 배당금</td>
                                     <td>1.00배</td>
                                 </tr>
                                 <tr>
@@ -299,7 +306,7 @@
                                     <td><input type="text" value="0"></td>
                                 </tr>
                                 <tr>
-                                    <td>예상적중금액</td>
+                                    <td>당첨 예산금</td>
                                     <td>0원</td>
                                 </tr>
                             </tbody>
@@ -309,8 +316,8 @@
                         <!-- Bet Button Section -->
                         <div class="bet-button-container">
                             <div>
-                                <button>5,000원</button>
                                 <button>10,000원</button>
+                                <button>30,000원</button>
                             </div>
 
                             <div>
@@ -324,64 +331,54 @@
                             </div>
 
                             <div>
-                                <button class="white bg-dark-violet">금액비우기</button>
-                                <button class="white bg-dark-violet">잔돈</button>
-                                <button class="white bg-dark-violet">MAX</button>
+                                <button class="white " style="background: green;">금액비우기</button>
+                                <button class="white " style="background: green;">잔돈</button>
+                                <button class="white " style="background: green;">MAX</button>
                             </div>
                         </div>
                         <!-- Bet Button Section -->
 
-                        <button class="cart-button-type-1">머니로 베팅하기</button>
-                        <button class="cart-button-type-2">포인트로 베팅하기</button>
+
+                        <button class="cart-button-type-2">베팅하기</button>
 
                         <!-- Bet Info Container -->
                         <div class="bet-info-container">
                             <div>
                                 <span>최소베팅금액</span>
-                                <span>5,000 원</span>
+                                <span>10,000 원</span>
                             </div>
                             <div>
                                 <span>최대베팅금액</span>
-                                <span>5.000,000 원</span>
+                                <span>1.000,000 원</span>
                             </div>
                             <div>
-                                <span>적중상한금액</span>
-                                <span>15,000,000 원</span>
+                                <span>최대적중금액</span>
+                                <span>3,000,000 원</span>
                             </div>
                         </div>
                         <!-- Bet Info Container -->
-
-
-
                     </div>
 
                     <div class="cart-banner">
                         <img src="../assets/images/banner/2.png" alt="">
                         <img src="../assets/images/banner/1.png" alt="">
                     </div>
-                   
+
                 </div>
             </div>
             <!-- Page Body Right Section -->
         </section>
-        
+
         <!-- Footer Section -->
         <footer>
             <img src="../assets/images/navigation/logo.png" alt="">
-            <small>오락실 is operated by M-Hub Gaming Operations Ltd with registered office at No. 12, Tigne Place, office 2/1, Tigne Street, Sliema SLM 3713, Malta.</small>
-            <br>
-            <small>오락실 Gaming Operations Ltd is licensed and regulated by the Malta Gaming Authority (MGA),</small>
-            <small>a public regulatory body responsible for the governance of all forms of gaming based in Malta.</small>
-            <br>
-            <small>The 오락실 license was issued on October 27th, 2014, with the license number: CL2/976/2014</small>
-            <small>Find out more about the MGA at www.mga.org.mt</small>
-            <br>
-            <small>Copyright 오락실 All rights reserved.</small>
             <button class="go-to-mobile">모바일 버전</button>
         </footer>
 
     </div>
 </body>
-<script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+    integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
 <script src="../assets/js/script.js"></script>
+
 </html>

@@ -2,13 +2,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #833bbd;
+    background: linear-gradient(#cf9113, #ffbd3f);
     height: 48px;
     line-height: 52px;
     text-align: center;
     font-size: 16px;
     font-weight: 700;
-    color: #fae60a;
+    color: #222;
     margin-top: 5px;
     border-radius: 10px;
 }
@@ -38,8 +38,8 @@
 }
 
 .cash-out-text-info {
-    font-size: 12px!important;
+    font-size: 12px !important;
     margin: 0;
-    color: #7f7f7f!important;
-    
+    color: #7f7f7f !important;
+
 }

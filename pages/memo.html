@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,14 +12,17 @@
     <link rel="stylesheet" href="../assets/css/page.css">
     <link rel="stylesheet" href="../assets/css/pages/qna.css">
     <link rel="stylesheet" href="../assets/css/pagination.css">
+
+    <link rel="stylesheet" href="../assets/css/iconfont.css">
 </head>
+
 <body>
     <div class="container">
         <!-- Top Navigation Section -->
         <nav class="navigation-section">
             <!-- Brand Area -->
             <div id="brand-area">
-                <img  onclick="window.location.href='home.html'" src="../assets/images/navigation/logo.png" alt="logo">
+                <img onclick="window.location.href='home.html'" src="../assets/images/navigation/logo.png" alt="logo">
             </div>
 
             <!-- Top Menu Options Section -->
@@ -29,30 +33,30 @@
                         <label>한줄공지</label>
                     </div>
                     <marquee scrollamount="7" onmouseover="this.stop()" onmouseout="this.start()">
-                        ●■▲ 온라인 오락실에 오신 것을 감사드립니다 ▲■● 주소 창에 평생 도메인 검색 : 온라인오락실.com , 오락실벳.com	
+                        라이브카지노가 오픈되었습니다. 생생한 카지노 게임을 즐겨보세요. 감사합니다 ^.^
                     </marquee>
                 </div>
                 <div class="section-content">
                     <ul>
                         <li class="user-name-level">
                             <img src="../assets/images/icons/level/1.png" alt="">
-                            <span>강남아 님</span>
+                            <span>홍길동 님</span>
                         </li>
                         <li class="user-notes" onclick="window.location='memo.html'">
-                            <img src="../assets/images/icons/memo.png" alt="">
-                            <span>쪽지 0 통</span>
+                            <span class="icon iconfont vam4"></span>
+                            <span>쪽지 <span class="yellow">0</span> 통</span>
                         </li>
                         <li class="user-game-money">
-                            <span>보유머니: <span class="pink">31,000</span> 원</span>
+                            <span class="icon iconfont fz20 vam3"></span>
+                            <span>보유머니: <span class="yellow">31,000</span> 원</span>
                         </li>
                         <li class="user-game-money">
-                            <span>보유머니: <span class="pink">31,000</span> 원</span>
-                        </li>
-                        <li class="user-game-money">
-                            <span>보유머니: <span class="pink">31,000</span> 원</span>
+                            <span class="icon iconfont fz20 vam3"></span>
+                            <span>카지노머니: <span class="yellow">31,000</span> 원</span>
                         </li>
                         <li class="user-game-points">
-                            <span>보유머니: <span>31,000</span> 원 </span>
+                            <span class="icon iconfont fz19 vam3"></span>
+                            <span>포인트: <span class="yellow">31,000</span> P </span>
                             <img src="../assets/images/icons/change.png" alt="">
                         </li>
                         <li class="directory-button">
@@ -68,23 +72,27 @@
         <!-- Menu Section -->
         <section class="menu-section">
             <ul>
-                <li onclick="window.location.href='sports.html'">스포츠</li>
-                <li onclick="window.location.href='mini-game.html'">미니게임</li>
                 <li onclick="window.location.href='casino.html'">카지노</li>
                 <li onclick="window.location.href='slot-lists.html'">슬롯게임</li>
+                <li onclick="window.location.href='mini-game.html'">미니게임</li>
+                <li onclick="window.location.href='sports.html'">스포츠</li>
                 <li onclick="window.location.href='sports-betting-lists.html'">베팅내역</li>
                 <li onclick="window.location.href='qna.html'">고객센터</li>
                 <li class="header-cash">
-                    <img src="../assets/images/icons/header_cash.png" alt="">
-                    <button>빠른계좌문의</button>
+                    <div class="inner-wrapper">
+                        <button>빠른계좌문의</button>
+                    </div>
                 </li>
                 <li class="header-cash-in" onclick="window.location.href='cash-in.html'">
-                    <img src="../assets/images/icons/header_cashin.png" alt="">
-                    <button>충전</button>
+                    <div class="inner-wrapper">
+                        <button>충전</button>
+                    </div>
                 </li>
-                <li class="header-cash-out"  onclick="window.location.href='cash-out.html'">
-                    <img src="../assets/images/icons/header_cashout.png" alt="">
-                    <button>환전</button>
+                <li class="header-cash-out" onclick="window.location.href='cash-out.html'">
+                    <div class="inner-wrapper">
+                        <button>환전</button>
+                    </div>
+
                 </li>
             </ul>
         </section>
@@ -105,12 +113,13 @@
                 <div class="page-left-menu-container">
                     <label class="page-left-menu-title">게임 분류</label>
                     <ul class="page-menu-tab">
-                        <li>스포츠</li>
-                        <li>미니게임</li>
                         <li>카지노</li>
+                        <li>슬롯</li>
+                        <li>미니게임</li>
+                        <li>스포츠</li>
                     </ul>
-                     <!-- Sports Menu Lists -->
-                     <ul class="page-menu-lists">
+                    <!-- Sports Menu Lists -->
+                    <ul class="page-menu-lists">
                         <li>
                             <div class="inner-flex">
                                 <img src="../assets/images/qna/1.png" alt="">
@@ -129,12 +138,12 @@
                                 <span class="lists-title">실시간(18)</span>
                             </div>
                         </li>
-                        
+
                     </ul>
-                     <!-- Sports Menu Lists -->
+                    <!-- Sports Menu Lists -->
                 </div>
             </div>
-             <!-- Page Body Left Section -->
+            <!-- Page Body Left Section -->
 
             <!-- Page Body Center Section -->
             <div class="page-body-center-section">
@@ -146,8 +155,8 @@
                     </div>
                     <div class="right">
                         <span class="gray" style="margin-right: 10px;">읽지 않은 쪽지는 삭제할 수 없습니다. </span>
-                        <button class="qna-quick c-pointer">전체삭제</button>
-                        <button class="qna-write c-pointer">전체읽기</button>
+                        <button class="qna-quick c-pointer" style="background: #b53a1e; border :none">전체삭제</button>
+                        <button class="qna-write c-pointer" style="background: #059fe7; border :none">전체읽기</button>
                     </div>
                 </div>
 
@@ -167,7 +176,7 @@
                             <td class="text-center">265</td>
                             <td class="text-left">★★ 10월19일 NBA 개막기념 돌발 이벤트 진행 ★★</td>
                             <td class="text-center">2022-10-19 07:59:08</td>
-                            <td class="text-center">2022-10-19 10:35:20	</td>
+                            <td class="text-center">2022-10-19 10:35:20 </td>
                             <td class="text-center"><button>삭제</button></td>
                         </tr>
                         <tr style="display: none;">
@@ -202,7 +211,8 @@
                                         <br>
                                         언제나 최선을 다 하는 오 락 실 이 되도록 노력하겠습니다.<br>
                                         <br>
-                                        -오락실 운영팀 올림-</p>
+                                        -오락실 운영팀 올림-
+                                    </p>
                                 </div>
                             </td>
                         </tr>
@@ -210,7 +220,7 @@
                             <td class="text-center">264</td>
                             <td class="text-left">★★ 10월 18일 MLB리그 경기 취소 안내 ★★</td>
                             <td class="text-center">2022-10-19 07:59:08</td>
-                            <td class="text-center">2022-10-19 10:35:20	</td>
+                            <td class="text-center">2022-10-19 10:35:20 </td>
                             <td class="text-center"><button>삭제</button></td>
                         </tr>
                         <tr style="display: none;">
@@ -245,7 +255,8 @@
                                         <br>
                                         언제나 최선을 다 하는 오 락 실 이 되도록 노력하겠습니다.<br>
                                         <br>
-                                        -오락실 운영팀 올림-</p>
+                                        -오락실 운영팀 올림-
+                                    </p>
                                 </div>
                             </td>
                         </tr>
@@ -253,7 +264,7 @@
                             <td class="text-center">263</td>
                             <td class="text-left">★★★((공지)) 슬롯게임 긴급점검 종료 안내 ★★</td>
                             <td class="text-center">2022-10-19 07:59:08</td>
-                            <td class="text-center">2022-10-19 10:35:20	</td>
+                            <td class="text-center">2022-10-19 10:35:20 </td>
                             <td class="text-center"><button>삭제</button></td>
                         </tr>
                         <tr style="display: none;">
@@ -288,7 +299,8 @@
                                         <br>
                                         언제나 최선을 다 하는 오 락 실 이 되도록 노력하겠습니다.<br>
                                         <br>
-                                        -오락실 운영팀 올림-</p>
+                                        -오락실 운영팀 올림-
+                                    </p>
                                 </div>
                             </td>
                         </tr>
@@ -296,7 +308,7 @@
                             <td class="text-center">262</td>
                             <td class="text-left">★★★((공지)) 슬롯 긴급 점검 안내 ★★★</td>
                             <td class="text-center">2022-10-19 07:59:08</td>
-                            <td class="text-center">2022-10-19 10:35:20	</td>
+                            <td class="text-center">2022-10-19 10:35:20 </td>
                             <td class="text-center"><button>삭제</button></td>
                         </tr>
                         <tr style="display: none;">
@@ -331,15 +343,16 @@
                                         <br>
                                         언제나 최선을 다 하는 오 락 실 이 되도록 노력하겠습니다.<br>
                                         <br>
-                                        -오락실 운영팀 올림-</p>
+                                        -오락실 운영팀 올림-
+                                    </p>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td class="text-center">261</td>
-                            <td class="text-left">	★★★ 크라운게임 정기 점검 종료 안내 ★★★</td>
+                            <td class="text-left"> ★★★ 크라운게임 정기 점검 종료 안내 ★★★</td>
                             <td class="text-center">2022-10-19 07:59:08</td>
-                            <td class="text-center">2022-10-19 10:35:20	</td>
+                            <td class="text-center">2022-10-19 10:35:20 </td>
                             <td class="text-center"><button>삭제</button></td>
                         </tr>
                         <tr style="display: none;">
@@ -374,15 +387,16 @@
                                         <br>
                                         언제나 최선을 다 하는 오 락 실 이 되도록 노력하겠습니다.<br>
                                         <br>
-                                        -오락실 운영팀 올림-</p>
+                                        -오락실 운영팀 올림-
+                                    </p>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td class="text-center">260</td>
-                            <td class="text-left">	★★★ 크라운게임 정기 점검 안내 ★★★</td>
+                            <td class="text-left"> ★★★ 크라운게임 정기 점검 안내 ★★★</td>
                             <td class="text-center">2022-10-19 07:59:08</td>
-                            <td class="text-center">2022-10-19 10:35:20	</td>
+                            <td class="text-center">2022-10-19 10:35:20 </td>
                             <td class="text-center"><button>삭제</button></td>
                         </tr>
                         <tr style="display: none;">
@@ -417,15 +431,16 @@
                                         <br>
                                         언제나 최선을 다 하는 오 락 실 이 되도록 노력하겠습니다.<br>
                                         <br>
-                                        -오락실 운영팀 올림-</p>
+                                        -오락실 운영팀 올림-
+                                    </p>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td class="text-center">259</td>
-                            <td class="text-left">	★★★ 토큰게임 정기 점검 종료 안내 ★★★</td>
+                            <td class="text-left"> ★★★ 토큰게임 정기 점검 종료 안내 ★★★</td>
                             <td class="text-center">2022-10-19 07:59:08</td>
-                            <td class="text-center">2022-10-19 10:35:20	</td>
+                            <td class="text-center">2022-10-19 10:35:20 </td>
                             <td class="text-center"><button>삭제</button></td>
                         </tr>
                         <tr style="display: none;">
@@ -460,7 +475,8 @@
                                         <br>
                                         언제나 최선을 다 하는 오 락 실 이 되도록 노력하겠습니다.<br>
                                         <br>
-                                        -오락실 운영팀 올림-</p>
+                                        -오락실 운영팀 올림-
+                                    </p>
                                 </div>
                             </td>
                         </tr>
@@ -468,7 +484,7 @@
                             <td class="text-center">258</td>
                             <td class="text-left">★★★ 토큰게임 정기 점검 안내 ★★★</td>
                             <td class="text-center">2022-10-19 07:59:08</td>
-                            <td class="text-center">2022-10-19 10:35:20	</td>
+                            <td class="text-center">2022-10-19 10:35:20 </td>
                             <td class="text-center"><button>삭제</button></td>
                         </tr>
                         <tr style="display: none;">
@@ -503,15 +519,16 @@
                                         <br>
                                         언제나 최선을 다 하는 오 락 실 이 되도록 노력하겠습니다.<br>
                                         <br>
-                                        -오락실 운영팀 올림-</p>
+                                        -오락실 운영팀 올림-
+                                    </p>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td class="text-center">257</td>
-                            <td class="text-left">	★★ 10월 16일 농협 시스템 정기점검 안내 ★★</td>
+                            <td class="text-left"> ★★ 10월 16일 농협 시스템 정기점검 안내 ★★</td>
                             <td class="text-center">2022-10-19 07:59:08</td>
-                            <td class="text-center">2022-10-19 10:35:20	</td>
+                            <td class="text-center">2022-10-19 10:35:20 </td>
                             <td class="text-center"><button>삭제</button></td>
                         </tr>
                         <tr style="display: none;">
@@ -546,15 +563,16 @@
                                         <br>
                                         언제나 최선을 다 하는 오 락 실 이 되도록 노력하겠습니다.<br>
                                         <br>
-                                        -오락실 운영팀 올림-</p>
+                                        -오락실 운영팀 올림-
+                                    </p>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td class="text-center">256</td>
-                            <td class="text-left">	★★ 10월16일 돌발 이벤트 진행 MLB리그 벼랑 끝 다저스 희생양 될 위기</td>
+                            <td class="text-left"> ★★ 10월16일 돌발 이벤트 진행 MLB리그 벼랑 끝 다저스 희생양 될 위기</td>
                             <td class="text-center">2022-10-19 07:59:08</td>
-                            <td class="text-center">2022-10-19 10:35:20	</td>
+                            <td class="text-center">2022-10-19 10:35:20 </td>
                             <td class="text-center"><button>삭제</button></td>
                         </tr>
                         <tr style="display: none;">
@@ -589,20 +607,21 @@
                                         <br>
                                         언제나 최선을 다 하는 오 락 실 이 되도록 노력하겠습니다.<br>
                                         <br>
-                                        -오락실 운영팀 올림-</p>
+                                        -오락실 운영팀 올림-
+                                    </p>
                                 </div>
                             </td>
                         </tr>
 
-                     
+
                     </tbody>
                 </table>
-                
+
 
                 <ul class="pagination">
                     <li><img src="../assets/images/pagination/prev.png" alt=""></li>
                     <li><img src="../assets/images/pagination/prev-single.png" alt=""></li>
-                    
+
                     <li class="number active">1</li>
                     <li class="number">2</li>
                     <li class="number ">3</li>
@@ -610,7 +629,7 @@
                     <li><img src="../assets/images/pagination/next.png" alt=""></li>
                 </ul>
 
-            
+
             </div>
             <!-- Page Body Center Section -->
 
@@ -642,7 +661,7 @@
                         <table class="cart-table-information">
                             <tbody>
 
-                                
+
                                 <tr>
                                     <td>보유머니</td>
                                     <td><span class="pink">31,000</span> 원</td>
@@ -720,29 +739,22 @@
                         <img src="../assets/images/banner/2.png" alt="">
                         <img src="../assets/images/banner/1.png" alt="">
                     </div>
-                   
+
                 </div>
             </div>
             <!-- Page Body Right Section -->
         </section>
-        
+
         <!-- Footer Section -->
         <footer>
             <img src="../assets/images/navigation/logo.png" alt="">
-            <small>오락실 is operated by M-Hub Gaming Operations Ltd with registered office at No. 12, Tigne Place, office 2/1, Tigne Street, Sliema SLM 3713, Malta.</small>
-            <br>
-            <small>오락실 Gaming Operations Ltd is licensed and regulated by the Malta Gaming Authority (MGA),</small>
-            <small>a public regulatory body responsible for the governance of all forms of gaming based in Malta.</small>
-            <br>
-            <small>The 오락실 license was issued on October 27th, 2014, with the license number: CL2/976/2014</small>
-            <small>Find out more about the MGA at www.mga.org.mt</small>
-            <br>
-            <small>Copyright 오락실 All rights reserved.</small>
             <button class="go-to-mobile">모바일 버전</button>
         </footer>
 
     </div>
 </body>
-<script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+    integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
 <script src="../assets/js/script.js"></script>
+
 </html>

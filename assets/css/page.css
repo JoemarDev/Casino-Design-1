@@ -1,25 +1,25 @@
 .page-body {
-    background: #15111d;
+    background: #000;
     display: flex;
     justify-content: space-between;
 }
 
 
 .page-body-center-section .page-tabs-nav li:hover {
-    color: #ff009c;
+    color: #ffd989;
 }
 
 .page-body-center-section .page-tabs-nav li .active {
-    color: #ff009c;
+    color: #ffd989;
 }
 
-.page-body-center-section .page-tabs-nav li  .title {
+.page-body-center-section .page-tabs-nav li .title {
     display: block;
 }
 
 
 .page-memo {
-    background: #3d3d49;
+    background: #221c14;
     border-radius: 5px;
     padding: 10px 15px;
     margin-bottom: 10px;
@@ -91,14 +91,14 @@
 }
 
 .page-left-menu-container {
-    background: #261d38;
+    background: #221c14;
     padding: 10px;
     color: #fff;
     border-radius: 5px;
 }
 
 
-.page-left-menu-container  .page-left-menu-title {
+.page-left-menu-container .page-left-menu-title {
     font-weight: 900;
     color: #a3a3ad;
     margin-bottom: 10px;
@@ -131,7 +131,7 @@
 
 
 .active {
-    color: #ff009c;
+    color: #ffd989;
 }
 
 .page-menu-lists li .menu-child-lists {
@@ -166,8 +166,9 @@
 .page-menu-lists li .inner-flex span {
     font-size: 14px;
 }
-.page-menu-lists li:hover .inner-flex{
-    color: #ff009c;
+
+.page-menu-lists li:hover .inner-flex {
+    color: #ffd989;
 }
 
 .page-menu-lists li img {
@@ -182,9 +183,9 @@
     font-size: 12px;
 }
 
-.page-menu-lists li  .lists-count-badge {
+.page-menu-lists li .lists-count-badge {
     padding: 3px 10px;
-    background: #504664;
+    background: #996806;
     border-radius: 5px;
     font-size: 12px;
     position: absolute;
@@ -216,8 +217,8 @@
 .cart-container {
     position: relative;
     width: 235px;
-    border: 2px solid #fd009c;
-    background: #191923;
+    border: 2px solid #996806;
+    background: #221c14;
     border-radius: 10px;
     overflow: hidden;
     padding-bottom: 12px;
@@ -252,53 +253,54 @@
 .cart-container .cart-header {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #43385a;
+    border-bottom: 1px solid #855b08;
     padding-bottom: 10px;
 }
 
 .cart-container .cart-header .cart-icon {
     width: 20px;
-    background: #fd009c;
+    background: #e2a224;
     padding: 5px;
     border-radius: 5px;
     margin-right: 10px;
 }
 
-.cart-container .cart-header  .cart-header-title {
+.cart-container .cart-header .cart-header-title {
     font-size: 18px;
     color: #fff;
     font-weight: 600;
 }
 
-.cart-container .cart-header  .cart-header-option-button {
+.cart-container .cart-header .cart-header-option-button {
     position: absolute;
     right: 10px;
     display: flex;
 }
 
 
-.cart-container .cart-header  .cart-header-option-button button {
+.cart-container .cart-header .cart-header-option-button button {
     width: 38px;
     line-height: 27px;
     text-align: center;
     cursor: pointer;
     color: #8e9aa5;
     font-size: 12px;
-    background: #2d2d40;
-    border:1px solid #79363f;
+    background: #000000;
+    border: 1px solid #855b08;
     margin: 0;
 }
 
-.cart-container .cart-header  .cart-header-option-button button.active {
-    color: #fd009c;
+.cart-container .cart-header .cart-header-option-button button.active {
+    color: #f9d976;
 }
-.cart-container .cart-header  .cart-header-option-button button:first-child {
+
+.cart-container .cart-header .cart-header-option-button button:first-child {
     border-right: none;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
 
-.cart-container .cart-header  .cart-header-option-button button:last-child {
+.cart-container .cart-header .cart-header-option-button button:last-child {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -310,18 +312,18 @@
     width: 100%;
     line-height: 25px;
     border-radius: 5px;
-    background: #8f135f;
+    background: #b4391c;
     text-align: center;
     margin: 10px 0px;
 }
 
 .cart-table-information {
-    background: #322b40;
+    background: #000000;
     color: #fff;
     font-size: 14px;
     width: 100%;
     box-sizing: border-box;
-    border-collapse: collapse; 
+    border-collapse: collapse;
     margin-bottom: 10px;
 }
 
@@ -332,7 +334,7 @@
     border-bottom: 1px solid #524f59;
 }
 
-.cart-table-information tr:last-child td{
+.cart-table-information tr:last-child td {
     border: none;
 }
 
@@ -344,6 +346,7 @@
     text-align: right;
     font-weight: 600;
 }
+
 .cart-table-information td input {
     width: 100%;
     text-align: right;
@@ -362,17 +365,20 @@
     cursor: pointer;
     font-size: 12px;
     border: none;
+    background: #3a3b42;
+    color: #fff;
 }
 
 
 .bet-button-container div button:hover {
-    color: #fd009c;
+    color: #ffd989;
 }
 
 .cart-button-type-1 {
+    display: none;
     border: none;
     width: 100%;
-    background: #ff009c;
+    background: #ffd989;
     text-align: center;
     height: 45px;
     color: #fff;
@@ -390,7 +396,7 @@
 .cart-button-type-2 {
     border: none;
     width: 100%;
-    background: #03805b;
+    background: #b63b20;
     text-align: center;
     height: 42px;
     color: #fff;
@@ -401,7 +407,7 @@
     transition-duration: 0.4s;
     margin: 5px 0px;
     border-radius: 14px;
-    box-shadow: 2px 2px 2px #135d47;
+    box-shadow: 2px 2px 2px #da5537;
 }
 
 .bet-info-container {
@@ -420,7 +426,7 @@
 
 }
 
-.bet-info-container div span:first-child{
+.bet-info-container div span:first-child {
     color: #727272;
 }
 
@@ -429,6 +435,7 @@
     width: 100%;
     padding: 10px 0px;
     box-sizing: border-box;
+    display: none;
 }
 
 .cart-banner img {
@@ -444,9 +451,9 @@
     text-align: center;
     border-bottom: 1px solid #2c2f31;
     font-size: 16px;
-    font-weight: 700;
-    color: #fff;
-    background: linear-gradient(#504664, #261d39);
+    font-weight: 900;
+    color: #000000bf;
+    background: linear-gradient(#cf9113, #ffbd3f);
     border-radius: 5px;
 }
 
@@ -483,14 +490,14 @@
 }
 
 .page-tab-menu .page-tab-menu-child.active {
-    background: linear-gradient(#4f09b7, #fd009c);
+    background: linear-gradient(#f5b436, #221c14);
     color: #fff;
 }
 
 
 
 .page-tab-menu .page-tab-menu-child:hover {
-    background: linear-gradient(#4f09b7, #fd009c);
+    background: linear-gradient(#f5b436, #221c14);
     color: #fff;
 }
 
@@ -507,22 +514,22 @@
 .page-section-memo .page-section-memo-header {
     display: flex;
     align-items: center;
-    color: #ff009c;
+    color: #ffd989;
     font-size: 20px;
     margin-bottom: 10px;
-    
+
 }
 
-.page-section-memo .page-section-memo-header img{
+.page-section-memo .page-section-memo-header img {
     margin-right: 10px;
 }
 
 
-.page-section-memo .page-section-memo-content ul{
+.page-section-memo .page-section-memo-content ul {
     padding-left: 20px;
 }
 
-.page-section-memo .page-section-memo-content li{
+.page-section-memo .page-section-memo-content li {
     font-size: 14px;
     margin-bottom: 5px;
 }

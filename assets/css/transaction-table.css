@@ -1,5 +1,5 @@
 .transaction-table {
-    border-top: 2px solid #8a56bd;
+    border-top: 2px solid #996806;
     width: 100%;
     margin-top: 20px;
     border-collapse: collapse;
@@ -11,7 +11,7 @@
     font-size: 20px;
     font-weight: 700;
     color: #d6d6de;
-    background: #3d3d49;
+    background: #221c14;
     border-bottom: 1px solid #56575f;
     width: 20%;
 
@@ -19,7 +19,7 @@
 
 .transaction-table tbody td {
     padding: 15px 0 15px 15px;
-    background: #15111d;
+    background: #000000;
     border-bottom: 1px solid #56575f;
     font-size: 16px;
     color: #333;
@@ -38,7 +38,7 @@
     margin-right: 5px;
     color: #fff;
     margin-bottom: 10px;
-    
+
 }
 
 
@@ -46,14 +46,15 @@
     font-size: 15px;
 }
 
-.transaction-table tbody td  span,p {
+.transaction-table tbody td span,
+p {
     color: #fff;
     font-size: 14px;
     font-weight: 600;
 }
 
 .transaction-table tbody td .transaction-content-flex img {
-   width: 30px;
+    width: 30px;
 }
 
 .transaction-table tbody td .transaction-content-flex img {
@@ -61,7 +62,8 @@
 }
 
 
-.transaction-table tbody td .transaction-content-flex span,label {
+.transaction-table tbody td .transaction-content-flex span,
+label {
     font-size: 20px;
     font-weight: 600;
     color: #fff;
@@ -98,7 +100,7 @@
 
 
 .transaction-table tbody td .transaction-child-content .warning-text-notice {
-    margin-bottom: 5px!important;
+    margin-bottom: 5px !important;
     display: block;
 }
 
@@ -106,16 +108,18 @@
     width: 84px;
     height: 40px;
     margin-right: 5px;
-    background: #1d7fb4;
+    background: #008000;
     text-align: center;
     font-size: 16px;
     font-weight: 700;
     color: #fff;
     border-radius: 6px;
-    box-shadow: 2px 2px 1px #144c6b;
+    box-shadow: 2px 2px 1px #063606;
     border: none;
     cursor: pointer;
 }
+
+
 
 .transaction-table tbody td .transaction-money-button.gray {
     background: #67686d;
@@ -130,8 +134,8 @@
     position: relative;
     left: 2px;
     top: 2px;
-    background: #144c6b;
-    box-shadow: -2px -2px 1px #1d7fb4;
+    background: #008000;
+    box-shadow: -2px -2px 1px #063606;
 }
 
 .submit-trasaction-button-container {
@@ -147,9 +151,9 @@
     font-size: 22px;
     font-weight: 700;
     color: #fff;
-    background: #ff009c;
+    background: #03a9f4;
     border-radius: 33px;
-    box-shadow: 3px 3px 1px #b2247b;
+    box-shadow: 3px 3px 1px #000000;
     border: none;
     margin-top: 20px;
     cursor: pointer;
@@ -165,16 +169,16 @@
     font-size: 22px;
     font-weight: 700;
     color: #fff;
-    background: #4f09b7;
+    background: #b63b20;
     border-radius: 33px;
-    box-shadow: 3px 3px 0px #6b2bcb;
+    box-shadow: 3px 3px 0px #da5537;
     border: none;
     margin-top: 20px;
     cursor: pointer;
 }
 
 
-.transaction-history-table-container  {
+.transaction-history-table-container {
     margin-top: 50px;
 }
 
@@ -189,7 +193,7 @@
 .transaction-history-table {
     width: 100%;
     color: #fff;
-    border-top: 2px solid #8a56bd;
+    border-top: 2px solid #996806;
     border-collapse: collapse;
 }
 
@@ -201,8 +205,9 @@
     font-size: 16px;
     font-weight: 700;
     color: #fff;
-    background: #3d3d49;
+    background: #1e170f;
 }
+
 .transaction-history-table th:first-child {
     width: 20%;
 }
@@ -215,17 +220,10 @@
     border-bottom: 1px solid #3e3f46;
     border-left: 0;
     cursor: pointer;
-    background: #322b40;
+    background: #000;
 }
 
 .transaction-history-table td:nth-child(2) {
     color: #fff;
     font-weight: 600;
 }
-
-
-.transaction-history-table  tr:hover td {
-    background: #2b2536;
-    /* border-bottom: 1px solid #e73b54; */
-}
-

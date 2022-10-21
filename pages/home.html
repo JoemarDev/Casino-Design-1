@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,14 +10,18 @@
     <link rel="stylesheet" href="../assets/css/navigation.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
     <link rel="stylesheet" href="../assets/css/pages/home.css">
+    <link rel="stylesheet" href="../assets/css/iconfont.css">
+
+    <link rel="stylesheet" href="../assets/css/iconfont.css">
 </head>
+
 <body>
     <div class="container">
         <!-- Top Navigation Section -->
         <nav class="navigation-section">
             <!-- Brand Area -->
             <div id="brand-area">
-                <img  onclick="window.location.href='home.html'" src="../assets/images/navigation/logo.png" alt="logo">
+                <img onclick="window.location.href='home.html'" src="../assets/images/navigation/logo.png" alt="logo">
             </div>
 
             <!-- Top Menu Options Section -->
@@ -27,30 +32,30 @@
                         <label>한줄공지</label>
                     </div>
                     <marquee scrollamount="7" onmouseover="this.stop()" onmouseout="this.start()">
-                        ●■▲ 온라인 오락실에 오신 것을 감사드립니다 ▲■● 주소 창에 평생 도메인 검색 : 온라인오락실.com , 오락실벳.com	
+                        라이브카지노가 오픈되었습니다. 생생한 카지노 게임을 즐겨보세요. 감사합니다 ^.^
                     </marquee>
                 </div>
                 <div class="section-content">
                     <ul>
                         <li class="user-name-level">
-                            <img src="../assets/images/icons/level/1.png" alt="">
-                            <span>강남아 님</span>
+                            <span class="yellow">LV. 1 &nbsp;</span>
+                            <span>홍길동 님</span>
                         </li>
                         <li class="user-notes" onclick="window.location='memo.html'">
-                            <img src="../assets/images/icons/memo.png" alt="">
-                            <span>쪽지 0 통</span>
+                            <span class="icon iconfont vam4"></span>
+                            <span>쪽지 <span class="yellow">0</span> 통</span>
                         </li>
                         <li class="user-game-money">
-                            <span>보유머니: <span class="pink">31,000</span> 원</span>
+                            <span class="icon iconfont fz20 vam3"></span>
+                            <span>보유머니: <span class="yellow">31,000</span> 원</span>
                         </li>
                         <li class="user-game-money">
-                            <span>보유머니: <span class="pink">31,000</span> 원</span>
-                        </li>
-                        <li class="user-game-money">
-                            <span>보유머니: <span class="pink">31,000</span> 원</span>
+                            <span class="icon iconfont fz20 vam3"></span>
+                            <span>카지노머니: <span class="yellow">31,000</span> 원</span>
                         </li>
                         <li class="user-game-points">
-                            <span>보유머니: <span>31,000</span> 원 </span>
+                            <span class="icon iconfont fz19 vam3"></span>
+                            <span>포인트: <span class="yellow">31,000</span> P </span>
                             <img src="../assets/images/icons/change.png" alt="">
                         </li>
                         <li class="directory-button">
@@ -66,35 +71,112 @@
         <!-- Menu Section -->
         <section class="menu-section">
             <ul>
-                <li onclick="window.location.href='sports.html'">스포츠</li>
-                <li onclick="window.location.href='mini-game.html'">미니게임</li>
                 <li onclick="window.location.href='casino.html'">카지노</li>
                 <li onclick="window.location.href='slot-lists.html'">슬롯게임</li>
+                <li onclick="window.location.href='mini-game.html'">미니게임</li>
+                <li onclick="window.location.href='sports.html'">스포츠</li>
                 <li onclick="window.location.href='sports-betting-lists.html'">베팅내역</li>
                 <li onclick="window.location.href='qna.html'">고객센터</li>
                 <li class="header-cash">
-                    <img src="../assets/images/icons/header_cash.png" alt="">
-                    <button>빠른계좌문의</button>
+                    <div class="inner-wrapper">
+                        <button>빠른계좌문의</button>
+                    </div>
                 </li>
                 <li class="header-cash-in" onclick="window.location.href='cash-in.html'">
-                    <img src="../assets/images/icons/header_cashin.png" alt="">
-                    <button>충전</button>
+                    <div class="inner-wrapper">
+                        <button>충전</button>
+                    </div>
                 </li>
-                <li class="header-cash-out"  onclick="window.location.href='cash-out.html'">
-                    <img src="../assets/images/icons/header_cashout.png" alt="">
-                    <button>환전</button>
+                <li class="header-cash-out" onclick="window.location.href='cash-out.html'">
+                    <div class="inner-wrapper">
+                        <button>환전</button>
+                    </div>
+
                 </li>
             </ul>
         </section>
         <!-- Menu Section -->
 
-        <!-- Banner Section -->
-        <section class="banner-section">
-            <img src="../assets/images/banner/1.jpeg" alt="">
-            <img src="../assets/images/banner/2.jpeg" alt="">
-            <img src="../assets/images/banner/3.jpeg" alt="">
+
+        <!-- Casino Section -->
+        <section class="casino-section">
+
+            <div class="casino-left-section">
+                <!-- Casino Section Header -->
+                <div class="casino-section-header">
+                    <img src="../assets/images/icons/casino-header-1.png" alt="">
+                    <h3>카지노&기타</h3>
+                </div>
+                <!-- Casino Section Header -->
+
+                <!-- Casino Left section body container -->
+                <div class="casino-left-section-body-container">
+                    <div class="casino-left-section-body">
+                        <div class="casino-inner-body">
+                            <img class="casino-card-bg-overlay" src="../assets/images/casino/bg.png" alt="">
+                            <div class="content">
+                                <span class="eng-title violet">EVOLUTION</span>
+                                <span class="kor-title">에볼루션</span>
+                                <img class="casino-card-badge" src="../assets/images/casino/badge-1.png" alt="">
+                                <img class="casino-card-hero" src="../assets/images/casino/1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="casino-left-section-body">
+                        <div class="casino-inner-body">
+                            <img class="casino-card-bg-overlay" src="../assets/images/casino/bg.png" alt="">
+                            <div class="content">
+                                <span class="eng-title violet">SLOT GAMES</span>
+                                <span class="kor-title">슬롯게임</span>
+                                <img class="casino-card-badge" src="../assets/images/casino/badge-2.png" alt="">
+                                <img class="casino-card-hero" src="../assets/images/casino/2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="casino-left-section-body">
+                        <div class="casino-inner-body">
+                            <img class="casino-card-bg-overlay" src="../assets/images/casino/bg.png" alt="">
+                            <div class="content">
+                                <span class="eng-title violet">BET GAMES</span>
+                                <span class="kor-title">벳게임즈</span>
+                                <img class="casino-card-badge" src="../assets/images/casino/badge-3.png" alt="">
+                                <img class="casino-card-hero" src="../assets/images/casino/3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Casino Left section body container -->
+            </div>
+
+
+            <div class="casino-right-section">
+                <!-- Casino Section Header -->
+                <div class="casino-section-header">
+                    <img src="../assets/images/icons/casino-header-2.png" alt="">
+                    <h3>BET365</h3>
+                </div>
+                <!-- Casino Section Header -->
+
+                <!-- Casino Right Body Section container -->
+                <div class="casino-right-section-body-container">
+                    <div class="casino-right-section-body relative">
+                        <img class="play-icon" src="../assets/images/casino/play.png" alt="">
+                        <img src="../assets/images/casino/right-1.png" alt="">
+                        <label class="section-right-body-title">가상축구</label>
+                    </div>
+                    <div class="casino-right-section-body relative">
+                        <img class="play-icon" src="../assets/images/casino/play.png" alt="">
+                        <img src="../assets/images/casino/right-2.png" alt="">
+                        <label class="section-right-body-title">가상개경주</label>
+                    </div>
+                </div>
+                <!-- Casino Right Body Section container -->
+
+            </div>
+
         </section>
-        <!-- Banner Section -->
+        <!-- Casino Section -->
+
 
         <!-- Sports Section -->
         <section class="sports-section section-container">
@@ -104,7 +186,7 @@
                     <img src="../assets/images/header-section/main_floor2_icon.png" alt="">
                 </div>
                 <div>
-                    <h3>스포츠</h3>
+                    <h3>미니게임</h3>
                 </div>
             </div>
             <!-- Page Section Header -->
@@ -120,7 +202,7 @@
                             <p>CROSS 조합베팅</p>
                         </div>
                     </div>
-                  
+
                 </div>
 
                 <div class="section-card-body">
@@ -142,7 +224,7 @@
                             <h4>실시간</h4>
                             <p>각 쿼터별 스포츠 베팅</p>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -153,17 +235,17 @@
         <!-- Mini Game Section -->
         <section class="mini-game-section section-container">
             <!-- Page Section Header -->
-               <div class="page-section-header">
+            <div class="page-section-header">
                 <div class="section-logo-container">
                     <img src="../assets/images/header-section/main_floor2_icon.png" alt="">
                 </div>
                 <div>
-                    <h3>스포츠</h3>
+                    <h3>미니게임</h3>
                 </div>
             </div>
             <!-- Page Section Header -->
 
-            
+
             <!-- Page Section Body -->
             <div class="section-body">
                 <div class="section-card-body ">
@@ -227,84 +309,6 @@
         </section>
         <!-- Mini Game Section -->
 
-        <!-- Casino Section -->
-        <section class="casino-section">
-
-            <div class="casino-left-section">
-                <!-- Casino Section Header -->
-                <div class="casino-section-header">
-                    <img src="../assets/images/icons/casino-header-1.png" alt="">
-                    <h3>카지노&기타</h3>
-                </div>
-                <!-- Casino Section Header -->
-
-                <!-- Casino Left section body container -->
-                <div class="casino-left-section-body-container">
-                    <div class="casino-left-section-body">
-                        <div class="casino-inner-body">
-                            <img class="casino-card-bg-overlay" src="../assets/images/casino/bg.png" alt="">
-                            <div class="content">
-                                <span class="eng-title violet">EVOLUTION</span>
-                                <span class="kor-title">에볼루션</span>
-                                <img class="casino-card-badge" src="../assets/images/casino/badge-1.png" alt="">
-                                <img class="casino-card-hero" src="../assets/images/casino/1.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="casino-left-section-body">
-                        <div class="casino-inner-body">
-                            <img class="casino-card-bg-overlay" src="../assets/images/casino/bg.png" alt="">
-                            <div class="content">
-                                <span class="eng-title violet">SLOT GAMES</span>
-                                <span class="kor-title">슬롯게임</span>
-                                <img class="casino-card-badge" src="../assets/images/casino/badge-2.png" alt="">
-                                <img class="casino-card-hero" src="../assets/images/casino/2.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="casino-left-section-body">
-                        <div class="casino-inner-body">
-                            <img class="casino-card-bg-overlay" src="../assets/images/casino/bg.png" alt="">
-                            <div class="content">
-                                <span class="eng-title violet">BET GAMES</span>
-                                <span class="kor-title">벳게임즈</span>
-                                <img class="casino-card-badge" src="../assets/images/casino/badge-3.png" alt="">
-                                <img class="casino-card-hero" src="../assets/images/casino/3.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Casino Left section body container -->
-            </div>
-            
-
-            <div class="casino-right-section">
-                <!-- Casino Section Header -->
-                <div class="casino-section-header">
-                    <img src="../assets/images/icons/casino-header-2.png" alt="">
-                    <h3>BET365</h3>
-                </div>
-                <!-- Casino Section Header -->
-
-                <!-- Casino Right Body Section container -->
-                <div class="casino-right-section-body-container">
-                    <div class="casino-right-section-body relative">
-                        <img class="play-icon" src="../assets/images/casino/play.png" alt="">
-                        <img src="../assets/images/casino/right-1.png" alt="">
-                        <label class="section-right-body-title">가상축구</label>
-                    </div>
-                    <div class="casino-right-section-body relative">
-                        <img class="play-icon" src="../assets/images/casino/play.png" alt="">
-                        <img src="../assets/images/casino/right-2.png" alt="">
-                        <label class="section-right-body-title">가상개경주</label>
-                    </div>
-                </div>
-                <!-- Casino Right Body Section container -->
-
-            </div>
-
-        </section>
-        <!-- Casino Section -->
 
         <!-- Money Option Section -->
         <section class="money-option-section">
@@ -336,7 +340,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </section>
         <!-- Money Option Section -->
 
@@ -359,17 +363,9 @@
         <!-- Footer Section -->
         <footer>
             <img src="../assets/images/navigation/logo.png" alt="">
-            <small>오락실 is operated by M-Hub Gaming Operations Ltd with registered office at No. 12, Tigne Place, office 2/1, Tigne Street, Sliema SLM 3713, Malta.</small>
-            <br>
-            <small>오락실 Gaming Operations Ltd is licensed and regulated by the Malta Gaming Authority (MGA),</small>
-            <small>a public regulatory body responsible for the governance of all forms of gaming based in Malta.</small>
-            <br>
-            <small>The 오락실 license was issued on October 27th, 2014, with the license number: CL2/976/2014</small>
-            <small>Find out more about the MGA at www.mga.org.mt</small>
-            <br>
-            <small>Copyright 오락실 All rights reserved.</small>
             <button class="go-to-mobile">모바일 버전</button>
         </footer>
     </div>
 </body>
+
 </html>

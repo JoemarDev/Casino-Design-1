@@ -1,7 +1,7 @@
 .qna-table {
     width: 100%;
     color: #fff;
-    border-top: 2px solid #8a56bd;
+    border-top: 2px solid #996806;
     border-collapse: collapse;
 }
 
@@ -13,8 +13,9 @@
     font-size: 16px;
     font-weight: 700;
     color: #fff;
-    background: #3d3d49;
+    background: #1e170f;
 }
+
 .qna-table th:first-child {
     width: 20%;
 }
@@ -27,7 +28,7 @@
     border-bottom: 1px solid #3e3f46;
     border-left: 0;
     cursor: pointer;
-    background: #322b40;
+    background: #000;
 }
 
 .qna-table td:nth-child(2) {
@@ -36,24 +37,24 @@
 }
 
 
-.qna-table  tr:hover td {
-    background: #2b2536;
+.qna-table tr:hover td {
+    background: #333333c2;
     /* border-bottom: 1px solid #e73b54; */
 }
 
 .no-hover:hover {
-    background: #322b40!important;
+    background: #000 !important;
 }
 
-.qna-table td  button {
+.qna-table td button {
     font-size: 18px;
     width: 49px;
     height: 27px;
     padding: 0;
     line-height: 27px;
     font-size: 13px;
-    color: #e73b54 !important;
-    background: #1f1f25;
+    color: #ffffff !important;
+    background: #b53a1e;
     border: 0;
     border-radius: 3px;
 }
@@ -64,7 +65,7 @@
     justify-content: space-between;
 }
 
-.footer-button-qna  button {
+.footer-button-qna button {
     min-width: 114px;
     height: 46px;
     line-height: 46px;
@@ -80,19 +81,55 @@
 }
 
 .qna-delete {
-    background: #56575b;
+    background: #3a3b42;
     color: #fff !important;
 }
+
 
 .qna-quick {
-    background: #ff009c;
-    color: #fff !important;
+    position: relative;
+    border: 1px solid #ffd273;
+    padding: 0 !important;
+    border-radius: 5px;
+
 }
 
-.qna-write {
-    background: #4f09b7;
-    color: #fff !important;
+.qna-quick .inner-wrapper {
+    background-image: linear-gradient(#cf9113, #ffbd3f);
+    border: 1px solid #333;
+    color: #333;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    line-height: 42px;
 }
+
+
+
+.qna-write {
+    position: relative;
+    border: 1px solid #7e7e7e !important;
+    padding: 0 !important;
+
+    border-radius: 5px;
+
+}
+
+.qna-write .inner-wrapper {
+    background-image: linear-gradient(#3a3b42, #3a3b42);
+    border: 1px solid #333;
+    color: #fff !important;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    line-height: 42px;
+}
+
+
 
 .table-memo-content {
     padding: 10px 20px;
@@ -108,26 +145,28 @@
     border-bottom: 1px solid #56575f;
 }
 
-.qna-message-header-block  img {
+.qna-message-header-block img {
     width: 30px;
     margin-right: 10px;
 }
+
 .qna-message-header-block span {
     margin-right: 10px;
 }
+
 .qna-message-header-block span:last-child {
     margin-left: auto;
 }
 
 .qna-message-header-block:last-child {
-    border-bottom : none;
+    border-bottom: none;
 }
 
 
 .qna-message-content {
     padding: 20px;
-    background: #3a3b42;
-    border-top: 2px solid #8a56bd;
+    background: #221c14;
+    border-top: 2px solid #996806;
     color: #fff;
     font-family: 'ns';
     font-size: 14px;
@@ -143,12 +182,54 @@
     outline: none;
     border: 0;
     padding-left: 20px;
-    
+
 
 }
 
-textarea.qna-writing  {
+textarea.qna-writing {
     width: 100%;
     box-sizing: border-box;
     height: 300px;
+}
+
+
+.blue-style {
+    position: relative;
+    border: 1px solid #0867b3 !important;
+    padding: 0 !important;
+    border-radius: 5px;
+
+}
+
+.blue-style .inner-wrapper {
+    background-image: linear-gradient(#125489, #03a9f4);
+    border: 1px solid #222;
+    color: #fff;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    line-height: 42px;
+}
+
+
+.red-style {
+    position: relative;
+    border: 1px solid #d85c38 !important;
+    padding: 0 !important;
+    border-radius: 5px;
+
+}
+
+.red-style .inner-wrapper {
+    background-image: linear-gradient(#af300c, #bb432e);
+    border: 1px solid #222;
+    color: #fff;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    line-height: 42px;
 }

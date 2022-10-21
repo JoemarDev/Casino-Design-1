@@ -2,16 +2,16 @@ footer {
     text-align: center;
     margin: 0;
     padding-top: 50px;
-    background: #16112f;
+    background: #221c14;
 }
 
-footer  img {
+footer img {
     display: block;
     margin: auto;
     margin-bottom: 50px;
 }
 
-footer   small {
+footer small {
     display: block;
     color: #6d7377;
 }
@@ -24,7 +24,7 @@ footer   small {
     font-size: 16px;
     font-weight: 700;
     color: #fff;
-    background: #A12BA8;
+    background: #996806;
     border-radius: 23px;
     margin-top: 20px;
     margin-bottom: 20px;
