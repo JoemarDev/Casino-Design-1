@@ -8,6 +8,7 @@
 
 .mini-game-lists .mini-game-child-list {
     text-align: center;
+    overflow: hidden;
 }
 
 .mini-game-lists .mini-game-child-list img {
@@ -18,7 +19,11 @@
     width: 100%;
     border: 3px solid #333343;
     box-sizing: border-box;
+    cursor: pointer;
+    overflow: hidden;
 }
+
+
 
 
 .mini-game-lists .mini-game-child-list label {

@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Game Page</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/navigation.css">
-    <link rel="stylesheet" href="../assets/css/footer.css">
-    <link rel="stylesheet" href="../assets/css/page.css">
-    <link rel="stylesheet" href="../assets/css/pages/mini-game.css">
+    <title>View Game Page</title>
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+    <link rel="stylesheet" href="../../../assets/css/navigation.css">
+    <link rel="stylesheet" href="../../../assets/css/footer.css">
+    <link rel="stylesheet" href="../../../assets/css/page.css">
+    <link rel="stylesheet" href="../../../assets/css/pages/view-game.css">
+    <link rel="stylesheet" href="../../../assets/css/transaction-table.css">
 
-    <link rel="stylesheet" href="../assets/css/iconfont.css">
+    <link rel="stylesheet" href="../../../assets/css/iconfont.css">
 </head>
 
 <body>
@@ -21,14 +22,14 @@
         <nav class="navigation-section">
             <!-- Brand Area -->
             <div id="brand-area">
-                <img onclick="window.location.href='home.html'" src="../assets/images/navigation/logo.png" alt="logo">
+                <img onclick="window.location.href='../../home.html'" src="../../../assets/images/navigation/logo.png" alt="logo">
             </div>
 
             <!-- Top Menu Options Section -->
             <div id="top-menu-options">
                 <div class="section-content">
                     <div class="section-title">
-                        <img src="../assets/images/icons/notice.png" alt="">
+                        <img src="../../../assets/images/icons/notice.png" alt="">
                         <label>한줄공지</label>
                     </div>
                     <marquee scrollamount="7" onmouseover="this.stop()" onmouseout="this.start()">
@@ -56,11 +57,11 @@
                         <li class="user-game-points">
                             <span class="icon iconfont fz19 vam3"></span>
                             <span>포인트: <span class="yellow">31,000</span> P </span>
-                            <img src="../assets/images/icons/change.png" alt="">
+                            <img src="../../../assets/images/icons/change.png" alt="">
                         </li>
                         <li class="directory-button">
-                            <button class="bg-gray" onclick="window.location.href='mypage.html'">MY 페이지</button>
-                            <img src="../assets/images/icons/logout.png" alt="">
+                            <button class="bg-gray" onclick="window.location.href='../../mypage.html'">MY 페이지</button>
+                            <img src="../../../assets/images/icons/logout.png" alt="">
                         </li>
                     </ul>
                 </div>
@@ -72,24 +73,24 @@
         <!-- Menu Section -->
         <section class="menu-section">
             <ul>
-                <li onclick="window.location.href='casino.html'">카지노</li>
-                <li onclick="window.location.href='slot-lists.html'">슬롯게임</li>
-                <li class="active" onclick="window.location.href='mini-game.html'">미니게임</li>
-                <li onclick="window.location.href='sports.html'">
+                <li onclick="window.location.href='../../casino.html'">카지노</li>
+                <li onclick="window.location.href='../../slot-lists.html'">슬롯게임</li>
+                <li onclick="window.location.href='../../mini-game.html'">미니게임</li>
+                <li onclick="window.location.href='../../sports.html'">
                     <span>스포츠</span>
                     <!-- Menu Child Section -->
                     <div class="menu-section-child">
                         <div class="inner-child-menu-section">
                             <div class="child-list">
-                                <img src="../assets/images/navigation/sports/1.png" alt="">
+                                <img src="../../../assets/images/navigation/sports/1.png" alt="">
                                 <label >스페셜</label>
                             </div>
                             <div class="child-list">
-                                <img src="../assets/images/navigation/sports/2.png" alt="">
+                                <img src="../../../assets/images/navigation/sports/2.png" alt="">
                                 <label >스페셜</label>
                             </div>
                             <div class="child-list">
-                                <img src="../assets/images/navigation/sports/3.png" alt="">
+                                <img src="../../../assets/images/navigation/sports/3.png" alt="">
                                 <label >실시간</label>
                             </div>
                         </div>
@@ -97,19 +98,19 @@
                     </div>
                     <!-- Menu Child Section -->
                 </li>
-                <li onclick="window.location.href='sports-betting-lists.html'">베팅내역</li>
-                <li onclick="window.location.href='qna.html'">고객센터</li>
+                <li onclick="window.location.href='../../sports-betting-lists.html'">베팅내역</li>
+                <li onclick="window.location.href='../../qna.html'">고객센터</li>
                 <li class="header-cash">
                     <div class="inner-wrapper">
                         <button>빠른계좌문의</button>
                     </div>
                 </li>
-                <li class="header-cash-in" onclick="window.location.href='cash-in.html'">
+                <li class="header-cash-in" onclick="window.location.href='../../cash-in.html'">
                     <div class="inner-wrapper">
                         <button>충전</button>
                     </div>
                 </li>
-                <li class="header-cash-out" onclick="window.location.href='cash-out.html'">
+                <li class="header-cash-out" onclick="window.location.href='../../cash-out.html'">
                     <div class="inner-wrapper">
                         <button>환전</button>
                     </div>
@@ -121,7 +122,7 @@
 
         <!-- Sports Banner -->
         <div class="page-banner">
-            <img src="../assets/images/minig-game/banner.jpg" alt="">
+            <img src="../../../assets/images/minig-game/banner.jpg" alt="">
             <h2 class="page-banner-title">미니게임</h2>
         </div>
         <!-- Sports Banner -->
@@ -136,7 +137,7 @@
                     <ul class="page-menu-tab">
                         <li>카지노</li>
                         <li>슬롯</li>
-                        <li class="active">미니게임</li>
+                        <li>미니게임</li>
                         <li>스포츠</li>
                     </ul>
                     <!-- Sports Menu Lists -->
@@ -191,13 +192,8 @@
                                 <div class="child-lists">토큰바카라</div>
                                 <div class="child-lists">토큰하이로우</div>
                                 <div class="child-lists">-준비중-</div>
-
                             </div>
                         </li>
-
-
-
-
                     </ul>
                     <!-- Sports Menu Lists -->
                 </div>
@@ -206,120 +202,121 @@
 
             <!-- Page Body Center Section -->
             <div class="page-body-center-section">
-
-                <div class="page-title-banner">
-                    스코어플러스
+                <div class="game-view-lists-button-header">
+                    <button  onclick="window.location='../scoreplus/3powerball.html'">스코어플러스</button>
+                    <button class="active" onclick="window.location='soccer.html'">벳이스트</button>
+                    <button  onclick="window.location='../minigame/kangwon.html'">미니게임</button>
+                    <button >토큰게임</button>
+                </div>
+                <div class="game-view-lists-button-header">
+                    <button onclick="window.location='soccer.html'">축구</button>
+                    <button  onclick="window.location='baseball.html'">야구</button>
+                    <button class="active" onclick="window.location='basketball.html'">농구</button>
+                    <button onclick="window.location='cricket.html'">크리켓</button>
+                    <button onclick="window.location='dice.html'">주사위</button>
                 </div>
 
-                <!-- Minigame Lists -->
-                <div class="mini-game-lists">
-                    <div class="mini-game-child-list c-pointer" onclick="window.location.href='games/scoreplus/3ladder.html'">
-                        <img src="../assets/images/minig-game/other/2.png" alt="">
-                        <label>3분 파워볼</label>
+                <div class="view-game-header">
+                    <div class="left">
+                        <h2>3분 파워볼 <span class="yellow">172</span> 회차</h2>
+                        <label>5분단위로 추첨이 이루어지며 하루 288회차 진행 홀,짝/언더,오버/소,중,대 맞추는 게임</label>
                     </div>
-                    <div class="mini-game-child-list c-pointer"  onclick="window.location.href='games/scoreplus/3powerball.html'">
-                        <img src="../assets/images/minig-game/other/1.png" alt="">
-                        <label>3분 사다리</label>
-                    </div>
-                    <div class="mini-game-child-list c-pointer"  onclick="window.location.href='games/scoreplus/5ladder.html'">
-                        <img src="../assets/images/minig-game/other/4.png" alt="">
-                        <label>5분 파워볼</label>
-                    </div>
-                    <div class="mini-game-child-list c-pointer"  onclick="window.location.href='games/scoreplus/5powerball.html'">
-                        <img src="../assets/images/minig-game/other/3.png" alt="">
-                        <label>5분 사다리</label>
-                    </div>
-
-
-                </div>
-                <!-- Minigame Lists -->
-
-
-
-                <div class="page-title-banner">
-                    벳이스트
+                    <div class="right"></div>
                 </div>
 
-                <!-- Minigame Lists -->
-                <div class="mini-game-lists">
-                    <div class="mini-game-child-list c-pointer" onclick="window.location.href='games/beteast/soccer.html'">
-                        <img src="../assets/images/beteast/football.png" alt="">
-                        <label>축구</label>
+                <div class="view-game-body">
+                    <div class="left">
+                        <div class="frame-wrapper" style="height: 498px;">
+                            <iframe class="game-frame-view" width="814" height="559"
+                                src="https://beteast365.com/basketball/index.html" frameborder="0"></iframe>
+                        </div>
+                        <div class="frame-wrapper" style="height: 416px">
+                            <iframe class="game-frame-view" width="880" height="560"
+                                src="https://beteast365.com/basketball/basketball_pattern.html" frameborder="0"></iframe>
+                        </div>
                     </div>
-                    <div class="mini-game-child-list c-pointer" onclick="window.location.href='games/beteast/baseball.html'">
-                        <img src="../assets/images/beteast/baseball.png" alt="">
-                        <label>야구</label>
-                    </div>
-                    <div class="mini-game-child-list c-pointer" onclick="window.location.href='games/beteast/basketball.html'">
-                        <img src="../assets/images/beteast/basketball.png" alt="">
-                        <label>농구</label>
-                    </div>
-                    <div class="mini-game-child-list c-pointer" onclick="window.location.href='games/beteast/cricket.html'">
-                        <img src="../assets/images/beteast/cricket.png" alt="">
-                        <label>크리켓</label>
-                    </div>
-                    <div class="mini-game-child-list c-pointer" onclick="window.location.href='games/beteast/dice.html'">
-                        <img src="../assets/images/beteast/dice.png" alt="">
-                        <label>주사위</label>
+                    <div class="right">
+                        <div class="header-betting-button">
+                            <label><span class="pink">파워볼</span> 숫자 홀/짝 | 오버/언더(<span class="blue">4.5</span>)</label>
+                        </div>
+                        <div class="betting-button-flex">
+
+                            <button>
+                                <span>[골]</span>
+                                <label>1.93</label>
+                            </button>
+
+                            <button>
+                                <span>[노골]</span>
+                                <label>1.93</label>
+                            </button>
+
+                        </div>
+                        <div class="header-betting-button">
+                            <label><span class="pink">파워볼</span> 숫자 홀/짝 | 오버/언더(<span class="blue">4.5</span>)</label>
+                        </div>
+                        <div class="betting-button-flex">
+                            <button>
+                                <span>키커 [좌]</span>
+                                <label>1.93</label>
+                            </button>
+
+                            <button>
+                                <span>키커 [우]</span>
+                                <label>1.93</label>
+                            </button>
+
+                        </div>
+                        <div class="header-betting-button">
+                            <label><span class="pink">파워볼</span> 숫자 홀/짝 | 오버/언더(<span class="blue">4.5</span>)</label>
+                        </div>
+                        <div class="betting-button-flex">
+
+                            <button>
+                                <span>골키퍼 [좌]</span>
+                                <label>1.93</label>
+                            </button>
+
+                            <button>
+                                <span>골키퍼 [우]</span>
+                                <label>1.93</label>
+                            </button>
+
+                        </div>
                     </div>
                 </div>
-                <!-- Minigame Lists -->
+                <div class="transaction-history-table-container">
+                    <h3>◎최근배팅내역</h3>
 
-                <div class="page-title-banner">
-                    미니게임
+                    <table class="transaction-history-table text-center">
+                        <thead>
+                            <tr>
+                                <th>베팅시간</th>
+                                <th>베팅내역</th>
+                                <th>베팅금액</th>
+                                <th>적중금액</th>
+                                <th>결과</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2022-07-02 14:01:45</td>
+                                <td>[3분 코인 파워볼] 301회차 파워볼 [홀] [1.95]</td>
+                                <td>10,000원</td>
+                                <td>19,500원</td>
+                                <td><span class="blue">적중</span></td>
+                            </tr>
+                            <tr>
+                                <td>2022-07-03 16:08:21</td>
+                                <td>[3분 코인 파워볼] 372회차 파워볼 [짝] [1.95]</td>
+                                <td>30,000원</td>
+                                <td>0원</td>
+                                <td><span class="red">실패</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-
-                <!-- Minigame Lists -->
-                <div class="mini-game-lists">
-                    <div class="mini-game-child-list c-pointer" onclick="window.location.href='games/minigame/kangwon.html'">
-                        <img src="../assets/images/minig-game/other/g1.png " alt="">
-                        <label>강원랜드</label>
-                    </div>
-                    <div class="mini-game-child-list c-pointer" onclick="window.location.href='games/minigame/lasvegas.html'">
-                        <img src="../assets/images/minig-game/other/g2.png " alt="">
-                        <label>라스베가스</label>
-                    </div>
-                    <div class="mini-game-child-list c-pointer" onclick="window.location.href='games/minigame/mario.html'">
-                        <img src="../assets/images/minig-game/other/g3.png " alt="">
-                        <label>마리오레이싱</label>
-                    </div>
-                    <div class="mini-game-child-list c-pointer" onclick="window.location.href='games/minigame/boom.html'">
-                        <img src="../assets/images/minig-game/other/g4.png " alt="">
-                        <label>붐붐붐사다리</label>
-                    </div>
-                    <div class="mini-game-child-list c-pointer" onclick="window.location.href='games/minigame/omygosh.html'">
-                        <img src="../assets/images/minig-game/other/g5.png " alt="">
-                        <label>오야봉섯다</label>
-                    </div>
-
-                </div>
-                <!-- Minigame Lists -->
-
-
-
-                <div class="page-title-banner">
-                    토큰게임
-                </div>
-
-                <!-- Minigame Lists -->
-                <div class="mini-game-lists">
-                    <div class="mini-game-child-list">
-                        <img src="../assets/images/minig-game/g5-1.jpeg" alt="">
-                        <label>토큰바카라</label>
-                    </div>
-                    <div class="mini-game-child-list">
-                        <img src="../assets/images/minig-game/g5-3.jpeg" alt="">
-                        <label>토큰하이로우</label>
-                    </div>
-                    <div class="mini-game-child-list">
-                        <img src="../assets/images/minig-game/g5-2.jpeg" alt="">
-                        <label>-준비중-</label>
-                    </div>
-
-                </div>
-                <!-- Minigame Lists -->
-
-
 
             </div>
             <!-- Page Body Center Section -->
@@ -329,9 +326,16 @@
             <div class="page-body-right-section">
                 <div class="sticky">
                     <div class="cart-container">
+                        <div class="cart-lock-overlay">
+                            <div class="cart-lock-content">
+                                <img src="../../../assets/images/icons/betting_close.png" alt="">
+                                <label>카트잠김</label>
+                            </div>
+                        </div>
+
                         <!-- Cart Header -->
                         <div class="cart-header">
-                            <img class="cart-icon" src="../assets/images/svg/cart.svg" alt="">
+                            <img class="cart-icon" src="../../../assets/images/svg/cart.svg" alt="">
                             <label class="cart-header-title">베팅카트</label>
                             <div class="cart-header-option-button">
                                 <button class="active">고정</button>
@@ -412,14 +416,11 @@
                             </div>
                         </div>
                         <!-- Bet Info Container -->
-
-
-
                     </div>
 
                     <div class="cart-banner">
-                        <img src="../assets/images/banner/2.png" alt="">
-                        <img src="../assets/images/banner/1.png" alt="">
+                        <img src="../../../assets/images/banner/2.png" alt="">
+                        <img src="../../../assets/images/banner/1.png" alt="">
                     </div>
 
                 </div>
@@ -429,7 +430,7 @@
 
         <!-- Footer Section -->
         <footer>
-            <img src="../assets/images/navigation/logo.png" alt="">
+            <img src="../../../assets/images/navigation/logo.png" alt="">
             <button class="go-to-mobile">모바일 버전</button>
         </footer>
 
@@ -437,6 +438,6 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
     integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
-<script src="../assets/js/script.js"></script>
+<script src="../../../assets/js/script.js"></script>
 
 </html>
