@@ -78,7 +78,7 @@
 
 .view-game-body .right {
     width: 30%;
-    height: 350px;
+
     position: sticky;
     top: 5px;
     border: 2px solid #996806;
@@ -118,21 +118,45 @@
     color: #fff;
     border: none;
     cursor: pointer;
-    margin: 10px;
+    margin: 3px;
+    background: #4f09b7;
+    box-shadow: 3px 3px 0px #6b2bcb;
+    border-radius: 10px;
+    font-size: 12px;
 
+}
+
+.betting-button-flex button label {
+    font-size: 14px;
+    display: block;
 }
 
 
 .betting-button-flex button:first-child {
     background: #4f09b7;
     box-shadow: 3px 3px 0px #6b2bcb;
-    border-radius: 17px
 }
+
+.betting-button-flex button:nth-child(2) {
+    background: #00d600;
+    box-shadow: 3px 3px 0px #047004;
+
+}
+
+
+.betting-button-flex button:nth-child(3) {
+    background: #3600fa;
+    box-shadow: 3px 3px 0px #160457;
+
+}
+
+
+
 
 .betting-button-flex button:last-child {
     background: #c73387;
     box-shadow: 3px 3px 0px #931863;
-    border-radius: 17px;
+
 }
 
 .betting-button-flex div {

@@ -7,10 +7,20 @@
 }
 
 body {
-    background: url('../images/home/bg.jpg');
+    background: linear-gradient(to bottom, rgb(0 0 0 / 54%), rgba(0, 0, 0, 100)), url(../images/home/bg.jpg);
     width: 100%;
     min-height: 100vh;
     background-attachment: fixed;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+.user-game-points img {
+    cursor: pointer;
+}
+
+.directory-button img {
+    cursor: pointer;
 }
 
 .sticky {
@@ -25,6 +35,9 @@ ul {
 
 
 
+button {
+    cursor: pointer;
+}
 
 .c-pointer {
     cursor: pointer;
