@@ -227,3 +227,22 @@ label {
     color: #fff;
     font-weight: 600;
 }
+
+
+.transfer-button {
+    color: #000;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 30px;
+}
+
+.transfer-button:nth-child(1) {
+    color: #fff;
+    background: #ff009c;
+}
+
+.transfer-button:nth-child(2) {
+    color: #000;
+    background: #22ebff;
+}

@@ -27,7 +27,7 @@
 
 .sports-section {
     overflow: hidden;
-    background: rgb(0, 0, 0, 0.5);
+    background: #221c14;
 }
 
 
@@ -128,12 +128,13 @@
 
 .mini-game-section {
     overflow: hidden;
-    background-image: linear-gradient(#261e12, #17110b);
+    /* background-image: linear-gradient(#261e12, #17110b); */
+    background: #000;
 }
 
 .mini-game-card {
     text-align: center;
-    background: #3a3b42;
+    background: #271d00;
     padding: 50px 20px;
     border-radius: 10px;
     position: relative;
@@ -179,7 +180,8 @@
 }
 
 .casino-section {
-    background: linear-gradient(to right, #221c14, #221c14);
+    /* background: linear-gradient(to right, #221c14, #221c14); */
+    background: #000;
 
 
 }
@@ -266,7 +268,7 @@
     display: flex;
     padding: 20px 150px;
     overflow: hidden;
-    background: #1b1b25;
+    background: #000;
 }
 
 .money-option-body {
@@ -291,7 +293,7 @@
 
 .pre-footer {
     padding: 50px 50px;
-    background: #15111d;
+    background: #000;
 }
 
 
