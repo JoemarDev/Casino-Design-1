@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="../assets/css/footer.css">
     <link rel="stylesheet" href="../assets/css/page.css">
     <link rel="stylesheet" href="../assets/css/pages/casino.css">
+    <link rel="stylesheet" href="../assets/css/pagination.css">
+    <link rel="stylesheet" href="../assets/css/transaction-table.css">
 
+    <link rel="stylesheet" href="../assets/css/popup.css">
     <link rel="stylesheet" href="../assets/css/iconfont.css">
 </head>
 
@@ -72,6 +75,7 @@
         </nav>
         <!-- Top Navigation Section -->
 
+        
         <!-- Menu Section -->
         <section class="menu-section">
             <ul>
@@ -136,8 +140,7 @@
         <!-- Sports Banner -->
 
         <!-- Page Body -->
-        <section class="page-body">
-
+        <section class="page-body" >
             <!-- Page Body Left Section -->
             <div class="page-body-left-section">
                 <div class="page-left-menu-container">
@@ -177,10 +180,10 @@
             <!-- Page Body Left Section -->
 
             <!-- Page Body Center Section -->
-            <div class="page-body-center-section">
+            <div class="page-body-center-section no-select" style="position: relative">
 
-                <div class="page-title-banner">
-                    라이브 카지노
+                <div class="page-title-banner c-pointer relative" onclick="PagePopupHandler()">
+                    카지노 머니전환
                 </div>
 
                 <!-- Casino Lists -->
@@ -209,6 +212,212 @@
 
                 </div>
                 <!-- Casino Lists -->
+                
+                
+
+
+
+
+
+
+                <!-- POPUP -->
+                <div class="page-body-pop-up" style="background: #000; display: none; ">
+                    <div class="pop-up-overlay"></div>
+                    <div class="pop-up-body">
+                        <div class="pop-up-header">
+                            <h3>카지노 머니전환</h3>
+                            <button onclick="PagePopupHandler()" class="popup-close"><img src="../assets/images/icons/close.png" alt=""></button>
+                        </div>
+                        
+                        <!-- Page Tab Menu -->
+                        <div class="page-tab-menu">
+                            <div class="page-tab-menu-child active" onclick="PageChildHandler(this,1)">카지노 머니
+                                이동
+                            </div>
+                            <div class="page-tab-menu-child" onclick="PageChildHandler(this,2)">머니전환
+                                내역
+                            </div>
+                        </div>
+                        <!-- Page Tab Menu -->
+
+                        <div class="popup-child-content-1">
+                            <!-- Page Section memo -->
+                            <div class="page-section-memo">
+                                <div class="page-section-memo-header">
+                                    <img src="../assets/images/icons/icon-suo-r.png" alt="">
+                                    <h3>필독/주의사항</h3>
+                                </div>
+
+                                <div class="page-section-memo-content">
+                                    <ul>
+                                        <li>① 에볼루션 = 배팅상한가 1,000만 / 각 테이블 마다 상이함 </li>
+                                        <li>② 카지노는 게임별 / 테이블별 금액 설정이 다릅니다.</li>
+                                        <li>③ 입장전에 상한가 선택후 입장 부탁드립니다.</li>
+                                        <li>④ 살롱 프라이빗은 2,500만원 까지 이용가능합니다.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Page Section memo -->
+
+
+                            <!-- Trasaction Table -->
+                            <table class="transaction-table">
+                                <tbody>
+                                    <tr>
+                                        <th>입금자명</th>
+                                        <td>
+                                            <div class="transaction-child-content">
+                                                <input class="account-number" type="text" value="test01" disabled>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>보유머니</th>
+                                        <td>
+                                            <div class="transaction-child-content">
+                                                <div class="transaction-content-flex">
+                                                    <img src="../assets/images/svg/wallet.svg" alt="">
+                                                    <label><span style="color: #ff009c">31,000</span> 원</label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>라이브카지노 게임머니</th>
+                                        <td>
+                                            <div class="transaction-child-content">
+                                                <div class="transaction-content-flex">
+                                                    <img src="../assets/images/svg/wallet.svg" alt="">
+                                                    <label><span style="color: #22ebff">31,000</span> 원</label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>머니이동</th>
+                                        <td>
+                                            <div class="transaction-child-content">
+                                                <span class="red warning-text-notice">
+                                                    라이브카지노를 이용하기 위해서는 게임머니 이동이 필요합니다. <br />
+                                                    필요하신 금액만 이동하여 게임을 즐겨보세요.<br />
+                                                    라이브카지노로 이동한 보유머니는 언제든지 보유머니로 다시 이동할 수 있습니다.
+                                                </span>
+
+                                                <div class="transaction-content-flex">
+                                                    <input class="amount-input" type="text">
+                                                    <button class="transaction-money-button">1만원</button>
+                                                    <button class="transaction-money-button">3만원</button>
+                                                    <button class="transaction-money-button">5만원</button>
+                                                    <button class="transaction-money-button">10만원</button>
+                                                    <button class="transaction-money-button">50만원</button>
+                                                    <button class="transaction-money-button">100만원</button>
+                                                    <button class="transaction-money-button "
+                                                        style="background: #b63b20">정정</button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="submit-trasaction-button-container">
+                                <button class="transfer-button">
+                                    보유머니 -> 라이브카지노 게임머니로 이동
+                                </button>
+                                <button class="transfer-button">
+                                    라이브카지노 게임머니 -> 보유머니로 이동
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="popup-child-content-2" style="display: none">
+                            <div class="transaction-history-table-container">
+            
+                                <table class="transaction-history-table text-center">
+                                    <thead>
+                                        <tr>
+                                            <th>전환시간</th>
+                                            <th>내용</th>
+                                            <th>금액</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2022-10-11 05:15:48 </td>
+                                            <td><span class="yellow">[보유머니] 카지노 머니로 전환</span></td>
+                                            <td><strong class="white">500,000 원</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2022-10-11 05:15:48 </td>
+                                            <td><span class="yellow">[보유머니] 카지노 머니로 전환</span></td>
+                                            <td><strong class="white">500,000 원</strong></td>
+                                        </tr>
+            
+                                        <tr>
+                                            <td>2022-10-11 05:15:48 </td>
+                                            <td><span class="yellow">[보유머니] 카지노 머니로 전환</span></td>
+                                            <td><strong class="white">500,000 원</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2022-10-11 05:15:48 </td>
+                                            <td><span class="yellow">[보유머니] 카지노 머니로 전환</span></td>
+                                            <td><strong class="white">500,000 원</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2022-10-11 05:15:48 </td>
+                                            <td><span class="yellow">[보유머니] 카지노 머니로 전환</span></td>
+                                            <td><strong class="white">500,000 원</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2022-10-11 05:15:48 </td>
+                                            <td><span class="yellow">[보유머니] 카지노 머니로 전환</span></td>
+                                            <td><strong class="white">500,000 원</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2022-10-11 05:15:48 </td>
+                                            <td><span class="yellow">[보유머니] 카지노 머니로 전환</span></td>
+                                            <td><strong class="white">500,000 원</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2022-10-11 05:15:48 </td>
+                                            <td><span class="yellow">[보유머니] 카지노 머니로 전환</span></td>
+                                            <td><strong class="white">500,000 원</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2022-10-11 05:15:48 </td>
+                                            <td><span class="yellow">[보유머니] 카지노 머니로 전환</span></td>
+                                            <td><strong class="white">500,000 원</strong></td>
+                                        </tr>
+            
+                                    </tbody>
+                                </table>
+
+                                <ul class="pagination">
+                                    <li><img src="../assets/images/pagination/prev.png" alt=""></li>
+                                    <li><img src="../assets/images/pagination/prev-single.png" alt=""></li>
+                                    <li class="number active">1</li>
+                                    <li class="number">2</li>
+                                    <li class="number">3</li>
+                
+                                    <li><img src="../assets/images/pagination/next-single.png" alt=""></li>
+                                    <li><img src="../assets/images/pagination/next.png" alt=""></li>
+                                </ul>
+                
+                            </div>
+            
+                        </div>
+                    </div>
+                </div>
+                <!-- POPUP -->
+
+
+
+
+
+
+
+
 
 
 

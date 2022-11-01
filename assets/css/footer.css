@@ -1,14 +1,17 @@
 footer {
     text-align: center;
     margin: 0;
-    padding-top: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     background: #221c14;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer img {
     display: block;
-    margin: auto;
-    margin-bottom: 50px;
+
 }
 
 footer small {
