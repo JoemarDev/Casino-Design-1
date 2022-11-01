@@ -15,7 +15,8 @@ const PageChildHandler = (elem, type) => {
     if(type == 1) {
         $('.popup-child-content-1').show();
         $('.popup-child-content-2').hide();
-    } if(type ==2) {
+    } if(type ==
+        2) {
         $('.popup-child-content-1').hide();
         $('.popup-child-content-2').show();
     }
